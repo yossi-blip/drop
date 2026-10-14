@@ -1,0 +1,666 @@
+=== FILE: pages/care.html ===
+<div class="route" data-route="care" data-title="Care at home" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap rel stack g20" style="padding-top:40px;padding-bottom:64px">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Care at home</span></nav>
+<div class="head-row">
+<div class="stack g18 maxw-lg">
+<p class="eyebrow r1">Care at home</p>
+<h1 class="h1 r2">Every kind of care, <em>one call away.</em></h1>
+<p class="lead r3">Skilled nursing, home health aides, therapy, pediatric and behavioral care across New York City, Long Island and the Hudson Valley — with the warm, personal approach that's been our signature since 1982.</p>
+</div>
+<div class="stack g10 r4" style="min-width:min(280px,100%)">
+<a class="b-red b-lg" href="#get-care">Find the right care<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<p class="small">Prefer to talk? Call <strong style="color:#1B1F2E;white-space:nowrap">1-800-704-4341</strong></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap stack g40">
+<div class="g4 g20">
+<a class="lift reveal" href="#skilled-nursing" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF">
+<div style="aspect-ratio:4/3;overflow:hidden;background:#CCDEF2"><img src="img/skilled-reports.jpg" alt="An Americare nurse reviewing paperwork with a patient at home" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g8" style="padding:22px 22px 24px;flex:1"><p class="kicker red">CHHA · Available 24/7</p><h2 class="h3">Skilled Nursing</h2><p class="p" style="font-size:15px">Health monitoring, medication management, wound care and care coordination by registered nurses.</p><span style="flex:1"></span><span class="link-arrow" style="font-size:15px">Learn more<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></div>
+</a>
+<a class="lift reveal" href="#home-health-aides" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF">
+<div style="aspect-ratio:4/3;overflow:hidden;background:#CCDEF2"><img src="img/hha-meal.jpg" alt="A home health aide sharing a smile with an older woman at breakfast" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g8" style="padding:22px 22px 24px;flex:1"><p class="kicker red">HHA · PCA</p><h2 class="h3">Home Health Aides</h2><p class="p" style="font-size:15px">Personal care, home help and companionship — a few hours a week or around the clock.</p><span style="flex:1"></span><span class="link-arrow" style="font-size:15px">Learn more<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></div>
+</a>
+<a class="lift reveal" href="#health-management" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF">
+<div style="aspect-ratio:4/3;overflow:hidden;background:#CCDEF2"><img src="img/healthmgmt.jpg" alt="A clinician resting a reassuring hand on a patient's shoulder" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g8" style="padding:22px 22px 24px;flex:1"><p class="kicker red">Chronic conditions</p><h2 class="h3">Health Management</h2><p class="p" style="font-size:15px">Care plans for stroke, Parkinson's, MS, heart disease, hypertension, diabetes and palliative care.</p><span style="flex:1"></span><span class="link-arrow" style="font-size:15px">Learn more<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></div>
+</a>
+<a class="lift reveal" href="#behavioral-health" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF">
+<div style="aspect-ratio:4/3;overflow:hidden;background:#CCDEF2"><img src="img/behavioral.jpg" alt="An Americare counselor talking with an older man at home" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g8" style="padding:22px 22px 24px;flex:1"><p class="kicker red">Mental health</p><h2 class="h3">Behavioral Health</h2><p class="p" style="font-size:15px">Specially trained nurses and aides for PTSD, dementia, anxiety, depression and more.</p><span style="flex:1"></span><span class="link-arrow" style="font-size:15px">Learn more<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></div>
+</a>
+<a class="lift reveal" href="#nhtd" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF">
+<div style="aspect-ratio:4/3;overflow:hidden;background:#CCDEF2"><img src="img/nhtd-paperwork.jpg" alt="A nurse going over paperwork with an older couple in their living room" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g8" style="padding:22px 22px 24px;flex:1"><p class="kicker red">Medicaid waiver</p><h2 class="h3">NHTD Program</h2><p class="p" style="font-size:15px">Nursing-home-level care and services while you keep living at home, fully covered by Medicaid.</p><span style="flex:1"></span><span class="link-arrow" style="font-size:15px">Learn more<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></div>
+</a>
+<a class="lift reveal" href="#therapy" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF">
+<div style="aspect-ratio:4/3;overflow:hidden;background:#CCDEF2"><img src="img/therapy-band.jpg" alt="A therapist guiding an older woman through resistance-band exercises" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g8" style="padding:22px 22px 24px;flex:1"><p class="kicker red">PT · OT · Speech</p><h2 class="h3">Therapy</h2><p class="p" style="font-size:15px">Physical, occupational and speech therapy to support a safe and swift recovery at home.</p><span style="flex:1"></span><span class="link-arrow" style="font-size:15px">Learn more<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></div>
+</a>
+<a class="lift reveal" href="#amerikids" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF">
+<div style="aspect-ratio:4/3;overflow:hidden;background:#CCDEF2"><img src="img/amerikids-hifive.jpg" alt="A caregiver and a young girl high-fiving over homework" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g8" style="padding:22px 22px 24px;flex:1"><p class="kicker red">OPWDD · Ages 3–18</p><h2 class="h3">Amerikids</h2><p class="p" style="font-size:15px">Pediatric nursing, aides and therapy for children with developmental disabilities, 24/7.</p><span style="flex:1"></span><span class="link-arrow" style="font-size:15px">Learn more<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></div>
+</a>
+<a class="lift reveal" href="#attencia" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF">
+<div style="aspect-ratio:4/3;overflow:hidden;background:#CCDEF2"><img src="img/attencia-wheelchair.jpg" alt="A caregiver sharing a meal with a woman who uses a wheelchair" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g8" style="padding:22px 22px 24px;flex:1"><p class="kicker red">Private pay</p><h2 class="h3">Attencia®</h2><p class="p" style="font-size:15px">Hand-picked caregivers, an RN-built care plan and more control over your homecare team.</p><span style="flex:1"></span><span class="link-arrow" style="font-size:15px">Learn more<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></div>
+</a>
+</div>
+<div class="row between g16 reveal" style="padding:22px 26px;border-radius:20px;background:#F4F8FE;border:1px solid #DCE6F5">
+<div class="row g14"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 3.5a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7-7z"></path><path d="M7 10l7 7"></path></svg></span><div class="stack" style="gap:2px"><p class="h4">Pharmaceutical Services</p><p class="small">Take your medications simply and safely with prepackaged, presorted doses from our affiliate, Medpack Pharmacy.</p></div></div>
+<a class="link-arrow" href="https://www.medpackrx.com" target="_blank" rel="noopener">Visit Medpack<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></a>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap stack g40">
+<div class="head-row">
+<div class="stack g14 maxw-lg">
+<p class="eyebrow">Which kind of help?</p>
+<h2 class="h2">Nurse, home health aide or personal care aide?</h2>
+</div>
+<p class="p maxw-sm">The right level of care depends on the person's health. Not sure? Our nurses do an in-home assessment and recommend a plan.</p>
+</div>
+<div class="tbl-wrap reveal" style="background:#FFFFFF">
+<table class="tbl">
+<thead><tr><th scope="col">&nbsp;</th><th scope="col">Skilled nurse (CHHA)</th><th scope="col">Home health aide (HHA)</th><th scope="col">Personal care aide (PCA)</th></tr></thead>
+<tbody>
+<tr><th scope="row">What they do</th><td>Health monitoring, medication management, wound care, patient and caregiver education, care coordination</td><td>Personal care plus basic health tasks such as vital signs and prescribed exercises</td><td>Non-medical help with bathing, grooming, dressing and household tasks</td></tr>
+<tr><th scope="row">Medical care</th><td>Yes, delivered by registered nurses</td><td>Basic, under a nurse's supervision</td><td>No</td></tr>
+<tr><th scope="row">Best for</th><td>Complex health needs, recovery after a hospital stay</td><td>Someone who needs medical monitoring, mobility or exercise help</td><td>Someone medically stable who needs help with daily living</td></tr>
+<tr><th scope="row">Learn more</th><td><a class="link-arrow" href="#skilled-nursing" style="font-size:15px">Skilled Nursing<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></td><td><a class="link-arrow" href="#home-health-aides" style="font-size:15px">Home Health Aides<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></td><td><a class="link-arrow" href="#home-health-aides" style="font-size:15px">Personal care<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split g64" style="align-items:start">
+<div class="stack g18">
+<p class="eyebrow">Paying for care</p>
+<h2 class="h2">We sort out coverage with you.</h2>
+<p class="lead">Most families don't know where to start with insurance. Our intake team checks your benefits, explains your options and handles the paperwork.</p>
+<div class="notice"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8.4-8 9-4.6-.6-8-4.4-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg><span>Coverage depends on each person's plan and needs. Intake confirms what's covered before care begins.</span></div>
+</div>
+<div class="g2 g16">
+<div class="card reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"></path></svg></span><h3 class="h4">Medicare</h3><p class="p" style="font-size:15px">Covers short-term skilled nursing and therapy at home, generally not long-term daily help.</p></div>
+<div class="card reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg></span><h3 class="h4">Medicaid &amp; MLTC</h3><p class="p" style="font-size:15px">May cover aide services after an assessment, often through a managed long-term care plan.</p></div>
+<div class="card reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path><path d="M10 20v-5h4v5"></path></svg></span><h3 class="h4">NHTD waiver</h3><p class="p" style="font-size:15px">Nursing-home-level services at home for eligible adults, fully covered by Medicaid.</p><a class="link-arrow" href="#nhtd" style="font-size:15px">Check eligibility<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+<div class="card reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1L3.2 9.4l6.1-.8z"></path></svg></span><h3 class="h4">Private pay</h3><p class="p" style="font-size:15px">Attencia® gives you more control over your caregivers and schedule.</p><a class="link-arrow" href="#attencia" style="font-size:15px">About Attencia<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/skilled.html ===
+<div class="route" data-route="skilled-nursing" data-title="Skilled Nursing (CHHA)" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#care">Care at home</a><span aria-hidden="true">/</span><span>Skilled Nursing</span></nav>
+<p class="eyebrow r1">Skilled Nursing · CHHA</p>
+<h1 class="h1 r2">Expert nursing care, <em>right at home.</em></h1>
+<p class="lead r3">Personalized, round-the-clock care at your doorstep — for your comfort, convenience and peace of mind.</p>
+<div class="row g12 r4"><a class="b-red" href="#get-care">Get started with home nursing<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a class="b-line" href="#refer">Refer a patient</a></div>
+<div class="row g32 r4" style="margin-top:10px">
+<div class="stack" style="gap:2px"><span class="stat-v" style="font-size:34px">24/7</span><span class="stat-l">Nurses available</span></div>
+<div class="stack" style="gap:2px"><span class="stat-v" style="font-size:34px">24 hrs</span><span class="stat-l">To assign your nurse</span></div>
+<div class="stack" style="gap:2px"><span class="stat-v" style="font-size:34px">5-star</span><span class="stat-l">CMS quality rating</span></div>
+</div>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/skilled-reports.jpg" alt="An Americare nurse reviewing a care plan with a patient at home"></div>
+<div class="float bob-a" style="right:20px;bottom:28px"><span class="live" style="width:10px;height:10px;border-radius:999px;background:#1A9E68;flex:none"></span><span class="stack" style="line-height:1.3"><strong style="font-size:14px;color:#1B1F2E">A nurse within 24 hours</strong><span style="font-size:12px;color:#4F5566">of your first call</span></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap stack g40">
+<div class="head-row">
+<div class="stack g14 maxw-lg"><p class="eyebrow">How our CHHA nurses help</p><h2 class="h2">Highly trained in expert medical care, in the familiar surroundings of home.</h2></div>
+</div>
+<div class="g5 g16">
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"></path></svg></span><h3 class="h4">Health monitoring</h3><p class="p" style="font-size:15px">Tracking vital signs and changes, and catching possible complications early.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 3.5a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7-7z"></path><path d="M7 10l7 7"></path></svg></span><h3 class="h4">Medication management</h3><p class="p" style="font-size:15px">The right doses at the right times, even with complex schedules.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"></rect><path d="M12 8v8"></path><path d="M8 12h8"></path></svg></span><h3 class="h4">Wound care</h3><p class="p" style="font-size:15px">Cleaning and dressing wounds, and teaching caregivers how to help.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg></span><h3 class="h4">Patient &amp; caregiver education</h3><p class="p" style="font-size:15px">Understanding the condition, care techniques and warning signs.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="18" cy="18" r="2.5"></circle><path d="M8.3 10.9l7.4-3.7"></path><path d="M8.3 13.1l7.4 3.7"></path></svg></span><h3 class="h4">Care coordination</h3><p class="p" style="font-size:15px">Keeping every doctor and provider updated on progress.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap split g72" style="align-items:center">
+<div class="photo reveal" style="min-height:540px">
+<div class="frame br"><img class="parallax" src="img/skilled-cane.jpg" alt="A nurse with a clipboard smiling with an older woman on her sofa"></div>
+<div class="mark br" aria-hidden="true"></div>
+</div>
+<div class="stack g18">
+<p class="eyebrow">Always by your side</p>
+<h2 class="h2">The best skilled nurses, when you need them most.</h2>
+<p class="lead">Having a loved one with complex health needs can leave you feeling overwhelmed and vulnerable. Our compassionate nurses are available 24/7, so you're never facing it alone.</p>
+<ul class="ticks">
+<li>Personalized care plans built around your goals and routines</li>
+<li>Culturally sensitive care, in your language</li>
+<li>Care coordination that keeps all your providers updated</li>
+<li>Therapy and aide services from the same team when you need more support</li>
+</ul>
+<div class="row g12" style="margin-top:6px"><a class="b-blue" href="#get-care">Get started<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><span class="small">or call <strong style="color:#1B1F2E">1-800-704-4341</strong></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap stack g40">
+<div class="stack g14 maxw-lg"><p class="eyebrow">Why choose Americare?</p><h2 class="h2">You want only the best for your loved one.</h2></div>
+<div class="g5 g16">
+<div class="card-pale reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1L3.2 9.4l6.1-.8z"></path></svg></span><h3 class="h4">Unmatched excellence</h3><p class="p" style="font-size:15px">Consistently rated one of the top providers by CMS, the government body that rates home healthcare agencies.</p></div>
+<div class="card-pale reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M8 3v4"></path><path d="M16 3v4"></path></svg></span><h3 class="h4">Extensive experience</h3><p class="p" style="font-size:15px">Over 40 years of dedicated service to New York families.</p></div>
+<div class="card-pale reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span><h3 class="h4">Individualized approach</h3><p class="p" style="font-size:15px">We've grown over the years, but we've never lost our human touch.</p></div>
+<div class="card-pale reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"></path></svg></span><h3 class="h4">Cultural diversity</h3><p class="p" style="font-size:15px">A diverse team delivers culturally sensitive care in the patient's language.</p></div>
+<div class="card-pale reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><h3 class="h4">Swift turnaround</h3><p class="p" style="font-size:15px">A home health nurse is assigned within 24 hours of your first call.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-pale">
+<div class="wrap split g48" style="align-items:center">
+<figure class="reveal stack g18" style="margin:0">
+<blockquote class="quote">“Americare's skilled nurses helped with my medications, changed bandages, and assisted me with getting to the bathroom. Their thoughtful care gave me the support I required to get back on my feet again.”</blockquote>
+<figcaption class="small"><strong style="color:#1B1F2E">Jessica</strong> · Patient</figcaption>
+</figure>
+<div class="card-blue reveal stack g14">
+<span class="corner soft" aria-hidden="true"></span>
+<p class="kicker" style="color:#D6DDF7">Private pay</p>
+<h3 class="h3" style="color:#FFFFFF">Get more with Attencia®</h3>
+<p class="p" style="color:#E4EAFF">Hand-picked caregivers, a registered nurse who crafts your care plan, and more control over your homecare team.</p>
+<a class="b-white" href="#attencia" style="align-self:flex-start">Explore Attencia<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/hha.html ===
+<div class="route" data-route="home-health-aides" data-title="Home Health Aides" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#care">Care at home</a><span aria-hidden="true">/</span><span>Home Health Aides</span></nav>
+<p class="eyebrow r1">Home Health Aides · Personal Care</p>
+<h1 class="h1 r2">Care that feels <em>like family.</em></h1>
+<p class="lead r3">Warm, experienced home health aides to help with everyday tasks and personal care — for just a few hours a week or around the clock, every day.</p>
+<div class="row g12 r4"><a class="b-red" href="#get-care">Get started with an aide<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a class="b-line" href="#careers">Become an aide</a></div>
+<p class="small r4">Free, no-obligation home care consultation: <strong style="color:#1B1F2E;white-space:nowrap">718-535-3100</strong></p>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/hha-meal.jpg" alt="A home health aide sharing a laugh with an older woman at the breakfast table"></div>
+<div class="float bob-a" style="left:24px;bottom:28px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg><span class="stack" style="line-height:1.3"><strong style="font-size:14px;color:#1B1F2E">Matched to your loved one</strong><span style="font-size:12px;color:#4F5566">by health, needs and interests</span></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap stack g40">
+<div class="head-row">
+<div class="stack g14 maxw-lg"><p class="eyebrow">How our aides help</p><h2 class="h2">Independent living, supported with compassion.</h2></div>
+<p class="p maxw-sm">When living alone gets hard, our aides help people age at home safely while keeping their independence and dignity.</p>
+</div>
+<div class="g3 g20">
+<div class="card reveal stack g16"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"></path></svg></span><h3 class="h3">Personal care</h3><ul class="ticks"><li>Bathing</li><li>Dressing</li><li>Personal grooming</li><li>Medication reminders</li></ul></div>
+<div class="card reveal stack g16"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path><path d="M10 20v-5h4v5"></path></svg></span><h3 class="h3">Home assistance</h3><ul class="ticks"><li>Light housekeeping</li><li>Help with errands and shopping</li><li>Meal preparation</li></ul></div>
+<div class="card reveal stack g16"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 14a4.5 4.5 0 0 0 7 0"></path><path d="M9 9.5h.01"></path><path d="M15 9.5h.01"></path></svg></span><h3 class="h3">Companionship</h3><ul class="ticks"><li>Engaging conversation</li><li>Emotional support</li><li>Help pursuing interests and hobbies</li><li>Accompaniment to medical appointments</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap split g72" style="align-items:center">
+<div class="stack g18">
+<p class="eyebrow">Worried about welcoming an aide?</p>
+<h2 class="h2">Here's what to expect.</h2>
+<div class="stack" style="margin-top:8px">
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg></span><div class="stack g6"><h3 class="h4">Perfect matches</h3><p class="p">We match aides to your loved one's general health, mental status and interests.</p></div></div>
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span><div class="stack g6"><h3 class="h4">Warmth and respect</h3><p class="p">Relationships built on empathy and respect, so care feels familiar from the first visit.</p></div></div>
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8.4-8 9-4.6-.6-8-4.4-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span><div class="stack g6"><h3 class="h4">Stellar care</h3><p class="p">Every aide is screened, trained, supervised and monitored.</p></div></div>
+</div>
+</div>
+<div class="photo reveal" style="min-height:560px">
+<div class="frame br"><img class="parallax" src="img/hha-couple.jpg" alt="An older couple smiling at a tablet together on their sofa"></div>
+<div class="mark br" aria-hidden="true"></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split g64" style="align-items:start">
+<div class="stack g18 sticky-side">
+<p class="eyebrow">Personal Care Aide program</p>
+<h2 class="h2">A dedicated caregiver for daily living.</h2>
+<p class="lead">Our Personal Care Aide (PCA) program pairs your loved one with a dedicated caregiver for hands-on help with daily living and personal care.</p>
+<div class="card-blue stack g12" style="margin-top:8px">
+<span class="corner soft" aria-hidden="true"></span>
+<p class="kicker" style="color:#D6DDF7">Attencia® Advantage</p>
+<p class="h4" style="color:#FFFFFF">More complex needs? Private-pay aide services with nurses available 24/7.</p>
+<a class="b-white b-sm" href="#attencia" style="align-self:flex-start">Get started with Attencia<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+<div class="stack g8">
+<p class="eyebrow" style="margin-bottom:8px">Things you need to know</p>
+<div class="faq">
+<button class="faq-q" type="button" aria-expanded="true" aria-controls="hha-f1">What is the difference between a PCA and an HHA?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="hha-f1">Home health aides (HHAs) do basic health tasks, such as checking vital signs and helping with prescribed exercises, under a nurse's supervision. Personal care aides (PCAs) give non-medical personal support.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="hha-f2">How do you match a home health aide with my loved one's needs?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="hha-f2" hidden>Matching starts with an in-home assessment of your loved one's condition, routine and personality.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="hha-f3">What do personal care aides do?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="hha-f3" hidden>They help with activities of daily living such as bathing, grooming and dressing, and with household tasks.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="hha-f4">When should I choose a PCA instead of an HHA?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="hha-f4" hidden>Choose a PCA if the person is medically stable. Choose an HHA if they need medical monitoring, mobility help or help with exercises.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="hha-f5">How can I become a certified personal care aide with Americare?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="hha-f5" hidden>Americare offers free home health aide certification training. <a href="#careers">See training details</a>.</p>
+<div class="faq-end"></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-pale">
+<div class="wrap split g48" style="align-items:center">
+<figure class="reveal stack g18" style="margin:0">
+<blockquote class="quote">“Americare's home health aides quickly put him at ease with their friendly manner and patience. They not only kept him safe, but also brought joy to his days with art projects and puzzles.”</blockquote>
+<figcaption class="small"><strong style="color:#1B1F2E">James W.</strong> · Family caregiver</figcaption>
+</figure>
+<div class="card reveal stack g12">
+<span class="corner" aria-hidden="true"></span>
+<p class="kicker red">Careers</p>
+<h3 class="h3">Become a home health aide. We'll train you for free.</h3>
+<p class="p">Free certification at the Americare Inc. Training School, taught in English, Spanish and Russian. Graduates are fast-tracked for hire.</p>
+<a class="b-blue" href="#careers" style="align-self:flex-start">Explore aide opportunities<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/healthmgmt.html ===
+<div class="route" data-route="health-management" data-title="Health Management" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#care">Care at home</a><span aria-hidden="true">/</span><span>Health Management</span></nav>
+<p class="eyebrow r1">Health Management Programs</p>
+<h1 class="h1 r2">Cohesive care for <em>chronic conditions.</em></h1>
+<p class="lead r3">Managing a chronic condition can feel overwhelming, but you're not alone. We bring long-term health management right to your doorstep, with care plans tailored to your loved one.</p>
+<div class="row g12 r4"><a class="b-red" href="#get-care">Get started with health management<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a class="b-line" href="#refer">Refer a patient</a></div>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/healthmgmt.jpg" alt="A smiling clinician with her hand on a patient's shoulder"></div>
+<div class="float bob-a" style="right:20px;bottom:28px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg><span class="stack" style="line-height:1.3"><strong style="font-size:14px;color:#1B1F2E">A personalized care plan</strong><span style="font-size:12px;color:#4F5566">built around your health goals</span></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap stack g32" data-tabs>
+<div class="head-row">
+<div class="stack g14 maxw-lg"><p class="eyebrow">How we help</p><h2 class="h2">Choose a condition to see what care looks like.</h2></div>
+</div>
+<div class="row g8" role="tablist" aria-label="Conditions">
+<button class="ch on" type="button" role="tab" aria-selected="true" data-tab="stroke">Stroke</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="parkinsons">Parkinson's disease</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="ms">Multiple sclerosis</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="heart">Heart disease</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="hypertension">Hypertension</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="diabetes">Diabetes</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="palliative">Palliative care</button>
+</div>
+<div class="card-pale" style="padding:clamp(24px,4vw,44px)">
+<div role="tabpanel" data-panel="stroke" class="split g40"><div class="stack g10"><p class="kicker red">Stroke</p><h3 class="h2-sm">Recovery, independence and safety after a stroke.</h3></div><ul class="ticks"><li>A personalized care plan aligned with your loved one's health needs and recovery goals</li><li>Rehabilitation support from physical, occupational and speech therapists to foster independence</li><li>Medication management, so the right medicines are taken at the right times</li><li>Emotional support, a listening ear and companionship</li><li>A home environment that's safe and comfortable</li></ul></div>
+<div role="tabpanel" data-panel="parkinsons" class="split g40" hidden><div class="stack g10"><p class="kicker red">Parkinson's disease</p><h3 class="h2-sm">Care that adapts as the disease progresses.</h3></div><ul class="ticks"><li>A care plan built around the disease's progression</li><li>Physical, occupational and speech therapy</li><li>Help following medication schedules, critical for managing symptoms</li><li>Companionship and emotional support</li><li>Home safety recommendations</li></ul></div>
+<div role="tabpanel" data-panel="ms" class="split g40" hidden><div class="stack g10"><p class="kicker red">Multiple sclerosis</p><h3 class="h2-sm">Steady support for daily life with MS.</h3></div><ul class="ticks"><li>Monitoring of symptoms</li><li>Medications at the correct dosage and on schedule</li><li>Help with bathing, dressing, grooming and meal preparation</li><li>Physical therapy for strength, flexibility and balance</li><li>Emotional support and companionship</li><li>MS education and resources</li><li>Safety assessments and recommendations for a secure home</li></ul></div>
+<div role="tabpanel" data-panel="heart" class="split g40" hidden><div class="stack g10"><p class="kicker red">Heart disease</p><h3 class="h2-sm">Heart-healthy routines, watched over at home.</h3></div><ul class="ticks"><li>Monitoring of blood pressure, heart rate and oxygen levels</li><li>Medication management</li><li>A personalized heart-healthy meal plan</li><li>Encouragement of physician-recommended activity</li><li>Lifestyle guidance on stress and quitting smoking</li><li>Help recognizing warning signs</li></ul></div>
+<div role="tabpanel" data-panel="hypertension" class="split g40" hidden><div class="stack g10"><p class="kicker red">Hypertension</p><h3 class="h2-sm">Blood pressure, kept in check.</h3></div><ul class="ticks"><li>Regular monitoring of blood pressure readings</li><li>Medication management</li><li>Diet and exercise guidance</li><li>Education on hypertension awareness, self-care and changes to look out for</li></ul></div>
+<div role="tabpanel" data-panel="diabetes" class="split g40" hidden><div class="stack g10"><p class="kicker red">Diabetes</p><h3 class="h2-sm">Confident daily diabetes management.</h3></div><ul class="ticks"><li>Personalized nutrition guidance for balanced, healthy meals</li><li>Regular health checks to monitor and manage blood sugar</li><li>Training on insulin administration and glucose monitoring</li><li>Emotional support for the challenges of living with diabetes</li></ul></div>
+<div role="tabpanel" data-panel="palliative" class="split g40" hidden><div class="stack g10"><p class="kicker red">Palliative care</p><h3 class="h2-sm">Comfort, dignity and quality of life.</h3><p class="p">We also address spiritual, emotional and psychological concerns for patients and families.</p></div><ul class="ticks"><li>Relieving pain and achieving comfort</li><li>Enhancing quality of life</li><li>Compassionate support for patients and family members</li><li>Maintaining dignity</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap stack g40">
+<div class="stack g14 maxw-lg"><p class="eyebrow">Worried about welcoming help into your home?</p><h2 class="h2">Individualized care for your loved one. Peace of mind for you.</h2></div>
+<div class="g3 g20">
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg></span><h3 class="h4">Perfect matches</h3><p class="p">Caregivers matched on health, mental status and interests.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span><h3 class="h4">Warmth and respect</h3><p class="p">Relationships built on empathy and respect.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8.4-8 9-4.6-.6-8-4.4-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span><h3 class="h4">Stellar care</h3><p class="p">Every caregiver is screened, trained, supervised and monitored.</p></div>
+</div>
+<figure class="reveal stack g18" style="margin:16px 0 0;max-width:900px">
+<blockquote class="quote">“As my mother's primary caregiver, I struggled to juggle her needs after her debilitating stroke with my full-time job and young kids at home. Having Americare's compassionate nurses provide skilled care allowed mom to regain her strength.”</blockquote>
+<figcaption class="small"><strong style="color:#1B1F2E">S. Thompson</strong> · Family caregiver</figcaption>
+</figure>
+</div>
+</section>
+</div>
+
+=== FILE: pages/behavioral.html ===
+<div class="route" data-route="behavioral-health" data-title="Behavioral Health" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#care">Care at home</a><span aria-hidden="true">/</span><span>Behavioral Health</span></nav>
+<p class="eyebrow r1">Behavioral Health Services</p>
+<h1 class="h1 r2">Promoting wellbeing in the <em>sanctuary of home.</em></h1>
+<p class="lead r3">Unwavering support and compassionate help for people with behavioral health diagnoses — aiming beyond managing symptoms, toward strength, progress and fulfillment.</p>
+<div class="row g12 r4"><a class="b-red" href="#get-care">Get started with behavioral health<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a class="b-line" href="#refer">Refer a patient</a></div>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/behavioral.jpg" alt="An Americare counselor taking notes while listening to an older man"></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap stack g32">
+<div class="stack g14 maxw-lg"><p class="eyebrow">How our behavioral services help</p><h2 class="h2">Specially trained nurses and certified aides, at home.</h2></div>
+<div class="g3 g20">
+<div class="card-sky reveal stack g12"><span class="icon-box" style="background:#FFFFFF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path><path d="M10 20v-5h4v5"></path></svg></span><h3 class="h4">Fewer hospital visits</h3><p class="p">Steady support at home that helps reduce trips to the hospital.</p></div>
+<div class="card-sky reveal stack g12"><span class="icon-box" style="background:#FFFFFF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><h3 class="h4">Better treatment adherence</h3><p class="p">Help following treatment plans and medication schedules.</p></div>
+<div class="card-sky reveal stack g12"><span class="icon-box" style="background:#FFFFFF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4"></path><path d="M12 17v4"></path><path d="M3 12h4"></path><path d="M17 12h4"></path><path d="M12 8l1.5 2.5L16 12l-2.5 1.5L12 16l-1.5-2.5L8 12l2.5-1.5z"></path></svg></span><h3 class="h4">Stronger self-care</h3><p class="p">Skills and routines that build confidence and independence.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap stack g32" data-tabs>
+<div class="head-row">
+<div class="stack g14 maxw-lg"><p class="eyebrow">Conditions we support</p><h2 class="h2">Every plan starts with understanding the person.</h2></div>
+<p class="p maxw-sm">Each plan includes a research-based assessment, a tailored plan, education for the family, counseling and goals, monitoring and care coordination, medication management and links to community resources.</p>
+</div>
+<div class="row g8" role="tablist" aria-label="Conditions">
+<button class="ch on" type="button" role="tab" aria-selected="true" data-tab="ptsd">PTSD</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="schizophrenia">Schizophrenia</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="insomnia">Insomnia</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="dementia">Dementia</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="bipolar">Bipolar disorder</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="anxiety">Anxiety disorder</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="depression">Depression</button>
+</div>
+<div class="card" style="padding:clamp(24px,4vw,44px)">
+<div role="tabpanel" data-panel="ptsd" class="split g40"><div class="stack g10"><p class="kicker red">Post-traumatic stress disorder</p><h3 class="h2-sm">Safety, trust and steady progress.</h3></div><ul class="ticks"><li>Research-based assessments to understand emotions and behaviors</li><li>A personalized treatment plan</li><li>Education for your loved one and family</li><li>Supportive counseling and realistic goals</li><li>Ongoing monitoring and care coordination</li><li>Medication management</li><li>Links to local community resources and support</li></ul></div>
+<div role="tabpanel" data-panel="schizophrenia" class="split g40" hidden><div class="stack g10"><p class="kicker red">Schizophrenia</p><h3 class="h2-sm">Consistent care and connection.</h3></div><ul class="ticks"><li>Research-based assessments</li><li>A personalized treatment plan</li><li>Education for your loved one and family</li><li>Supportive counseling and goal setting</li><li>Monitoring for medication side effects</li><li>Medication management and care coordination</li><li>Links to rehabilitative networks and community resources</li></ul></div>
+<div role="tabpanel" data-panel="insomnia" class="split g40" hidden><div class="stack g10"><p class="kicker red">Insomnia</p><h3 class="h2-sm">Better nights, better days.</h3></div><ul class="ticks"><li>Analysis of sleep patterns and behaviors to personalize treatment</li><li>Supportive counseling aimed at realistic goals for sleep</li><li>Education on sleep habits for your loved one and family</li><li>Ongoing monitoring and care coordination</li><li>Medication management</li><li>Links to community resources</li></ul></div>
+<div role="tabpanel" data-panel="dementia" class="split g40" hidden><div class="stack g10"><p class="kicker red">Dementia</p><h3 class="h2-sm">Calm, familiar, dignified care.</h3></div><ul class="ticks"><li>Research-based assessments</li><li>Skills for daily activities and changes in behavior</li><li>Dementia-friendly activities</li><li>Education for the family about dementia and how it progresses</li><li>Monitoring and care coordination</li><li>Medication management</li><li>Links to community resources</li></ul></div>
+<div role="tabpanel" data-panel="bipolar" class="split g40" hidden><div class="stack g10"><p class="kicker red">Bipolar disorder</p><h3 class="h2-sm">Routines that support stability.</h3></div><ul class="ticks"><li>Research-based assessments and a tailored plan</li><li>Healthy routines and behaviors that can help stabilize mood</li><li>Strategies for coping with mood swings</li><li>Education for your loved one and family</li><li>Supportive counseling and goals</li><li>Monitoring, care coordination and medication management</li><li>Links to community resources</li></ul></div>
+<div role="tabpanel" data-panel="anxiety" class="split g40" hidden><div class="stack g10"><p class="kicker red">Anxiety disorder</p><h3 class="h2-sm">Tools for calmer everyday life.</h3></div><ul class="ticks"><li>Research-based assessments and a tailored plan</li><li>Calming practices such as mindfulness, deep breathing and routine</li><li>Guidance during intense episodes</li><li>Education for your loved one and family</li><li>Supportive counseling and goals</li><li>Monitoring, care coordination and medication management</li><li>Links to community resources</li></ul></div>
+<div role="tabpanel" data-panel="depression" class="split g40" hidden><div class="stack g10"><p class="kicker red">Depression</p><h3 class="h2-sm">Support that lifts, day by day.</h3></div><ul class="ticks"><li>Research-based assessments and a tailored plan</li><li>Positive habits and activities that can lift mood</li><li>Education for your loved one and family</li><li>Supportive counseling and realistic goals</li><li>Monitoring, care coordination and medication management</li><li>Links to community resources</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-pale">
+<div class="wrap split g48" style="align-items:center">
+<figure class="reveal stack g18" style="margin:0">
+<blockquote class="quote">“Americare's specially trained staff took the time to get to know her likes and dislikes. Their gentle approach kept her calm and comforted during a difficult time.”</blockquote>
+<figcaption class="small"><strong style="color:#1B1F2E">M. Davis</strong> · Family caregiver</figcaption>
+</figure>
+<div class="stack g12 reveal">
+<p class="kicker">Why families choose Americare</p>
+<ul class="ticks">
+<li>Consistently rated one of the top providers by CMS</li>
+<li>Over 40 years of dedicated service</li>
+<li>Culturally sensitive care in your loved one's language</li>
+<li>A nurse assigned within 24 hours of your first call</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/nhtd.html ===
+<div class="route" data-route="nhtd" data-title="NHTD Medicaid Waiver Program" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#care">Care at home</a><span aria-hidden="true">/</span><span>NHTD Waiver</span></nav>
+<p class="eyebrow r1">NHTD Medicaid Waiver Program</p>
+<h1 class="h1 r2">You can choose <em>home</em> over a nursing home.</h1>
+<p class="lead r3">The Nursing Home Transition and Diversion (NHTD) waiver gives nursing-home-eligible adults the option to live at home — with the same services, supervision and expert care they'd expect from a nursing home.</p>
+<div class="row g12 r4"><a class="b-red" href="#get-care">Get started with NHTD services<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><button class="b-line" type="button" data-scroll="elig-sec">Check eligibility</button></div>
+<div class="row g10 r4" style="margin-top:6px"><span class="pill white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8.4-8 9-4.6-.6-8-4.4-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>&nbsp;Fully covered by Medicaid</span><span class="pill white">No cost to participants</span></div>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/nhtd-paperwork.jpg" alt="An Americare nurse reviewing paperwork with an older man and his wife at home"></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white" id="elig-sec">
+<div class="wrap split g64" style="align-items:start">
+<div class="stack g18">
+<p class="eyebrow">Am I eligible?</p>
+<h2 class="h2">Three questions to see if NHTD fits.</h2>
+<p class="lead">You may be eligible for the NHTD Waiver Program if all three are true. It mainly serves seniors, but adults over 18 with a verified physical disability may also qualify.</p>
+</div>
+<div class="card-pale stack g16" id="elig" style="padding:clamp(24px,3.5vw,36px)">
+<label class="check" style="min-height:58px"><input type="checkbox" id="elig1"><span>I need nursing-home level of care</span></label>
+<label class="check" style="min-height:58px"><input type="checkbox" id="elig2"><span>I'm eligible for Medicaid</span></label>
+<label class="check" style="min-height:58px"><input type="checkbox" id="elig3"><span>I'm over the age of 18</span></label>
+<div class="result maybe" id="elig-out" role="status" aria-live="polite"></div>
+<a class="b-blue" href="#get-care" style="align-self:flex-start">Talk to us about NHTD<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap stack g40">
+<div class="head-row">
+<div class="stack g14 maxw-lg"><p class="eyebrow">What's included</p><h2 class="h2">Services built around your Plan of Care.</h2></div>
+<p class="p maxw-sm">Each NHTD participant chooses a Service Coordinator, who creates an individualized Plan of Care with them.</p>
+</div>
+<div class="g4 g16">
+<div class="card reveal row g14" style="flex-wrap:nowrap"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg></span><h3 class="h4">Personal aides</h3></div>
+<div class="card reveal row g14" style="flex-wrap:nowrap"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c3 2 9 2 12 0v-5"></path></svg></span><h3 class="h4">Training in independent living</h3></div>
+<div class="card reveal row g14" style="flex-wrap:nowrap"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M4.9 4.9l1.4 1.4"></path><path d="M17.7 17.7l1.4 1.4"></path><path d="M4.9 19.1l1.4-1.4"></path><path d="M17.7 6.3l1.4-1.4"></path></svg></span><h3 class="h4">Structured day program</h3></div>
+<div class="card reveal row g14" style="flex-wrap:nowrap"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6.5a4 4 0 0 0 5 5l-8.5 8.5a2.1 2.1 0 0 1-3-3l8.5-8.5a4 4 0 0 1-2-2z"></path></svg></span><h3 class="h4">Home safety modifications</h3></div>
+<div class="card reveal row g14" style="flex-wrap:nowrap"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3v8a3 3 0 0 0 6 0V3"></path><path d="M7 3v18"></path><path d="M17 3c-2 0-3 2.5-3 6s1 4 3 4v8"></path></svg></span><h3 class="h4">Delivered meals</h3></div>
+<div class="card reveal row g14" style="flex-wrap:nowrap"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"></path></svg></span><h3 class="h4">Community integration counseling</h3></div>
+<div class="card reveal row g14" style="flex-wrap:nowrap"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="2"></rect><path d="M11 18h2"></path></svg></span><h3 class="h4">Assistive technology</h3></div>
+<div class="card reveal row g14" style="flex-wrap:nowrap"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3z"></path><path d="M14 10h4l3 3v3h-7"></path><circle cx="7" cy="18" r="2"></circle><circle cx="17" cy="18" r="2"></circle></svg></span><h3 class="h4">Moving assistance</h3></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-ink on-ink clip">
+<div aria-hidden="true" style="position:absolute;right:-140px;bottom:-120px;width:620px;height:540px;background:rgba(255,255,255,.04);clip-path:polygon(50% 0,100% 100%,0 100%)"></div>
+<div class="wrap rel stack g48">
+<div class="stack g14 maxw-lg"><p class="eyebrow on-dark">An easier enrollment</p><h2 class="h2">We walk you through every step.</h2></div>
+<div class="g3 g20">
+<div class="card-ink reveal stack g12"><p class="kicker" style="color:#AFC0FF">Step 1</p><h3 class="h3">Paperwork made easy</h3><p class="p">We help you collect and complete all the documents you need.</p></div>
+<div class="card-ink reveal stack g12"><p class="kicker" style="color:#AFC0FF">Step 2</p><h3 class="h3">Hands-on help</h3><p class="p">We walk you through the process, so you never navigate it alone.</p></div>
+<div class="card-ink reveal stack g12" style="background:#2940C2"><p class="kicker" style="color:#D6DDF7">Step 3</p><h3 class="h3">Always here for you</h3><p class="p" style="color:#E4EAFF">There's always someone to speak to if you need any help.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split g64" style="align-items:start">
+<div class="stack g18 sticky-side"><p class="eyebrow">FAQs</p><h2 class="h2">What you need to know about NHTD.</h2><a class="link-arrow" href="#guides">Read our NHTD guide<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+<div class="faq">
+<button class="faq-q" type="button" aria-expanded="true" aria-controls="nh-f1">Who is eligible for the NHTD program?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="nh-f1">Anyone in New York who is Medicaid-eligible, 18 or older, and needs nursing-home level of care.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="nh-f2">Is the NHTD Medicaid Waiver program just for seniors?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="nh-f2" hidden>It mainly serves seniors, but adults over 18 with a verified physical disability may qualify.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="nh-f3">How do I know if I'm eligible?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="nh-f3" hidden>Service care coordinators determine eligibility. <a href="#get-care">Start here</a> and we'll connect you.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="nh-f4">Is there a cost to be in the NHTD waiver program?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="nh-f4" hidden>No. The NHTD waiver program is fully covered by Medicaid.</p>
+<div class="faq-end"></div>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/therapy.html ===
+<div class="route" data-route="therapy" data-title="Americare Therapy Services" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#care">Care at home</a><span aria-hidden="true">/</span><span>Therapy</span></nav>
+<p class="eyebrow r1">Americare Therapy Services</p>
+<h1 class="h1 r2">Regain your strength. <em>Enjoy life again.</em></h1>
+<p class="lead r3">Life is meant for living. When health problems get in the way, our physical, occupational and speech therapists help you recover safely and swiftly — at home.</p>
+<div class="row g12 r4"><a class="b-red" href="#get-care">Get started with in-home therapy<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a class="b-line" href="#refer">Refer a patient</a></div>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/therapy-band.jpg" alt="A therapist guiding an older woman through resistance-band exercises at home"></div>
+<div class="float bob-a" style="right:20px;bottom:28px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="4.5" r="2"></circle><path d="M9 21l3-7 3 3v5"></path><path d="M7 12l3-4h4l2 3h3"></path></svg><span class="stack" style="line-height:1.3"><strong style="font-size:14px;color:#1B1F2E">PT · OT · Speech</strong><span style="font-size:12px;color:#4F5566">at home, on your schedule</span></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap stack g32" data-tabs>
+<div class="head-row">
+<div class="stack g14 maxw-lg"><p class="eyebrow">How we help</p><h2 class="h2">Careful evaluation, attentive listening, a plan to get you thriving.</h2></div>
+</div>
+<div class="row g8" role="tablist" aria-label="Therapy types">
+<button class="ch on" type="button" role="tab" aria-selected="true" data-tab="pt"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="4.5" r="2"></circle><path d="M9 21l3-7 3 3v5"></path><path d="M7 12l3-4h4l2 3h3"></path></svg>Physical therapy</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="ot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12"></path><path d="M11 11V4.5a1.5 1.5 0 0 1 3 0V12"></path><path d="M14 11V6a1.5 1.5 0 0 1 3 0v7a7 7 0 0 1-7 7h-1a6 6 0 0 1-5-3l-2.5-4a1.5 1.5 0 0 1 2.5-1.6L8 13"></path></svg>Occupational therapy</button>
+<button class="ch" type="button" role="tab" aria-selected="false" data-tab="st"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"></path></svg>Speech therapy</button>
+</div>
+<div class="card-sky" style="padding:clamp(28px,4.5vw,56px)">
+<div role="tabpanel" data-panel="pt" class="split g48" style="align-items:center"><p class="quote">We'll help you build up your strength, improve your balance, and take on the world — or at least the stairs to your front door — with confidence.</p><div class="stack g14"><p class="kicker red">Physical therapy</p><p class="p">Getting you back on your feet, one small step at a time.</p><ul class="ticks"><li>Strength and balance</li><li>Mobility after surgery, stroke or injury</li><li>Safe movement around your home</li></ul></div></div>
+<div role="tabpanel" data-panel="ot" class="split g48" style="align-items:center" hidden><p class="quote">From dressing to driving, we help you turn everyday tasks into everyday victories.</p><div class="stack g14"><p class="kicker red">Occupational therapy</p><p class="p">Take back control of your daily routine and regain your independence and confidence.</p><ul class="ticks"><li>Dressing, cooking and self-care</li><li>Daily routines adapted to your home</li><li>Confidence with everyday tasks</li></ul></div></div>
+<div role="tabpanel" data-panel="st" class="split g48" style="align-items:center" hidden><p class="quote">Whether you're struggling to find the right words, stuttering, or having trouble swallowing, we're here to help you regain your voice.</p><div class="stack g14"><p class="kicker red">Speech therapy</p><p class="p">Patient, compassionate support so you can communicate and safely enjoy meals with the people you love.</p><ul class="ticks"><li>Finding words and communicating</li><li>Stuttering</li><li>Swallowing safely</li></ul></div></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap split g72" style="align-items:center">
+<div class="photo reveal" style="min-height:560px">
+<div class="frame br"><img class="parallax" src="img/rehab-walk.jpg" alt="A therapist supporting an older man as he walks with a crutch"></div>
+<div class="mark br" aria-hidden="true"></div>
+</div>
+<div class="stack g18">
+<p class="eyebrow">What drives our care</p>
+<h2 class="h2">We're therapists because we believe in making lives better.</h2>
+<div class="stack" style="margin-top:8px">
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4"></path><path d="M12 17v4"></path><path d="M3 12h4"></path><path d="M17 12h4"></path><path d="M12 8l1.5 2.5L16 12l-2.5 1.5L12 16l-1.5-2.5L8 12l2.5-1.5z"></path></svg></span><div class="stack g6"><h3 class="h4">Unleash their inner superhero</h3><p class="p">Every plan aims at regaining independence.</p></div></div>
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg></span><div class="stack g6"><h3 class="h4">Let them take the lead</h3><p class="p">Plans are built with the patient, family and caregivers together.</p></div></div>
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span><div class="stack g6"><h3 class="h4">Treat people, not patients</h3><p class="p">Compassionate care for the whole person.</p></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split g64" style="align-items:start">
+<div class="stack g18 sticky-side"><p class="eyebrow">FAQs</p><h2 class="h2">In-home therapy, explained.</h2><p class="p">Therapy can be combined with skilled nursing: therapists rebuild strength while nurses manage pain, vital signs and medications.</p></div>
+<div class="faq">
+<button class="faq-q" type="button" aria-expanded="true" aria-controls="th-f1">What is in-home physical therapy?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="th-f1">Therapists come to your home to restore strength, balance and mobility after surgery, stroke or injury.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="th-f2">How does in-home occupational therapy differ?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="th-f2" hidden>It focuses on practical skills such as dressing, cooking and self-care.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="th-f3">When should I choose in-home therapy over a clinic?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="th-f3" hidden>When mobility problems or pain make travel hard.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="th-f4">How long does in-home occupational therapy usually last?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="th-f4" hidden>Usually weeks to months, depending on goals and progress.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="th-f5">What about physical therapy for a stroke patient?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="th-f5" hidden>Exercises are tailored to rebuild strength, balance and mobility after a stroke.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="th-f6">Is skilled nursing necessary for speech or occupational therapy?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="th-f6" hidden>Not always, but it's recommended for complex medical needs.</p>
+<div class="faq-end"></div>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/amerikids.html ===
+<div class="route" data-route="amerikids" data-title="Amerikids Pediatric Services" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#care">Care at home</a><span aria-hidden="true">/</span><span>Amerikids</span></nav>
+<p class="eyebrow r1">Amerikids Pediatric Services</p>
+<h1 class="h1 r2">Home care for children with <em>special needs.</em></h1>
+<p class="lead r3">Specialized, compassionate care for children with developmental disabilities — and relief for the people who love them.</p>
+<div class="row g12 r4"><a class="b-red" href="#get-care">Get started with Amerikids<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a class="b-line" href="#refer">Refer a patient</a></div>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/amerikids-hifive.jpg" alt="A caregiver and a young girl sharing a high-five over homework"></div>
+<div class="float bob-a" style="right:20px;bottom:28px"><span class="live" style="width:10px;height:10px;border-radius:999px;background:#1A9E68;flex:none"></span><span class="stack" style="line-height:1.3"><strong style="font-size:14px;color:#1B1F2E">Available 24/7</strong><span style="font-size:12px;color:#4F5566">across all five boroughs</span></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap">
+<div class="g4 g16 reveal">
+<div class="card-pale stack g8"><span class="icon-box" style="background:#FFFFFF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"></circle><path d="M8 21v-6l-2-3 4-2h4l4 2-2 3v6"></path></svg></span><p class="h3">Ages 3–18</p><p class="small">Children with special needs</p></div>
+<div class="card-pale stack g8"><span class="icon-box" style="background:#FFFFFF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg></span><p class="h3">OPWDD</p><p class="small">Children who qualify for OPWDD services</p></div>
+<div class="card-pale stack g8"><span class="icon-box" style="background:#FFFFFF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></span><p class="h3">5 boroughs</p><p class="small">Brooklyn, Queens, Manhattan, the Bronx, Staten Island</p></div>
+<div class="card-pale stack g8"><span class="icon-box" style="background:#FFFFFF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><p class="h3">24/7</p><p class="small">Care 24 hours a day, 7 days a week</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap stack g40">
+<div class="head-row">
+<div class="stack g14 maxw-lg"><p class="eyebrow">How we help</p><h2 class="h2">A team handpicked for your child's needs.</h2></div>
+<p class="p maxw-sm">Our caregivers are trained to work with children with special needs, and our pediatric nurses connect families to the resources they need.</p>
+</div>
+<div class="g5 g16">
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"></rect><path d="M12 8v8"></path><path d="M8 12h8"></path></svg></span><h3 class="h4">Nursing</h3><p class="p" style="font-size:15px">Pediatric-skilled nurses build personalized care plans and oversee aides.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg></span><h3 class="h4">Home health aides</h3><p class="p" style="font-size:15px">Bathing and dressing, mobility, companionship, play and medication reminders.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="4.5" r="2"></circle><path d="M9 21l3-7 3 3v5"></path><path d="M7 12l3-4h4l2 3h3"></path></svg></span><h3 class="h4">Physical therapy</h3><p class="p" style="font-size:15px">Building mobility, balance and strength.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12"></path><path d="M11 11V4.5a1.5 1.5 0 0 1 3 0V12"></path><path d="M14 11V6a1.5 1.5 0 0 1 3 0v7a7 7 0 0 1-7 7h-1a6 6 0 0 1-5-3l-2.5-4a1.5 1.5 0 0 1 2.5-1.6L8 13"></path></svg></span><h3 class="h4">Occupational therapy</h3><p class="p" style="font-size:15px">Daily living skills like dressing, eating and toileting, adapted to your home.</p></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"></path></svg></span><h3 class="h4">Speech therapy</h3><p class="p" style="font-size:15px">Communication and safe swallowing.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split g72" style="align-items:center">
+<div class="stack g18">
+<p class="eyebrow">Here for you and your family</p>
+<h2 class="h2">An extension of your family, earning your trust every day.</h2>
+<p class="lead">We build long-lasting relationships with the families we serve. A dedicated team answers your questions, eases your fears and brings a sense of normalcy and peace of mind to your home.</p>
+<ul class="ticks">
+<li>A home health nurse assigned within 24 hours of your first call</li>
+<li>Staff fluent in your family's language</li>
+<li>Consistently rated one of the top providers by CMS</li>
+</ul>
+</div>
+<div class="photo reveal" style="min-height:540px">
+<div class="frame br"><img class="parallax" src="img/amerikids-floor.jpg" alt="A caregiver playing with a young boy on the living room floor"></div>
+<div class="mark br" aria-hidden="true"></div>
+</div>
+</div>
+</section>
+</div>
+

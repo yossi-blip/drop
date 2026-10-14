@@ -1,0 +1,64 @@
+<div class="route" data-route="contact" data-title="Contact us" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap rel stack g18" style="padding-top:40px;padding-bottom:56px">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Contact</span></nav>
+<p class="eyebrow r1">Contact us</p>
+<h1 class="h1 r2">We're just <em>a click away.</em></h1>
+<p class="lead r3 maxw-md">We'd love to hear from you. Fill out the form and we'll get back to you, typically within 24 hours.</p>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap split-l g56" style="align-items:start">
+<div>
+<form class="card stack g20" id="ct-form" novalidate style="padding:clamp(24px,3.5vw,40px)">
+<div class="notice warn">[[I:lock:20]]<span><strong>Prototype:</strong> this form doesn't send anything. Don't enter real personal or medical information.</span></div>
+<div class="fgrid">
+<div class="field"><label class="label" for="ct-first">First name <span class="req">*</span></label><input class="input" id="ct-first" name="first" autocomplete="given-name" required></div>
+<div class="field"><label class="label" for="ct-last">Last name <span class="req">*</span></label><input class="input" id="ct-last" name="last" autocomplete="family-name" required></div>
+<div class="field"><label class="label" for="ct-phone">Phone <span class="req">*</span></label><input class="input" id="ct-phone" name="phone" type="tel" autocomplete="tel" required></div>
+<div class="field"><label class="label" for="ct-email">Email <span class="req">*</span></label><input class="input" id="ct-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field span2"><label class="label" for="ct-subject">What can we help with? <span class="req">*</span></label>
+<select class="input" id="ct-subject" name="subject" required>
+<option value="">Choose a subject</option>
+<option>Requesting Skilled Nursing / Therapy</option>
+<option>Requesting Home Health Aide Services</option>
+<option>Private Pay</option>
+<option>Refer a patient</option>
+<option>Apply for Home Health Aide Training</option>
+<option>Other</option>
+</select></div>
+<div class="field span2" id="ct-resume-wrap" hidden><span class="label">Upload your resume <span class="req">*</span></span>
+<label class="drop" for="ct-resume">[[I:upload]]<strong style="color:#1B1F2E">Select or drop a file</strong><span id="ct-resume-name">doc, docx, pdf, jpg or png</span></label>
+<input class="sr" id="ct-resume" name="resume" type="file" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" required></div>
+<fieldset class="fset field span2"><legend class="label" style="margin-bottom:6px">How should we reach you?</legend>
+<div class="radio-row"><label class="check"><input type="radio" name="reach" value="Phone" checked>Phone</label><label class="check"><input type="radio" name="reach" value="Email">Email</label></div></fieldset>
+<div class="field span2"><label class="label" for="ct-msg">Your message <span class="req">*</span></label><textarea class="input" id="ct-msg" name="message" required></textarea></div>
+<label class="check span2" style="min-height:auto;padding:12px 14px;align-items:flex-start"><input type="checkbox" id="ct-consent" required style="margin-top:2px"><span style="font-size:14px">I authorize Americare to contact me by phone, email or text message. <span class="req">*</span></span></label>
+</div>
+<p class="err-msg step-msg" hidden>Please complete the highlighted fields.</p>
+<div class="row between g16">
+<p class="small">This form is not for emergencies. In an emergency, call 911.</p>
+<button class="b-red" type="submit">Send message[[ARROW]]</button>
+</div>
+</form>
+<div class="confirm" id="ct-done" hidden>
+<span class="okmark">[[I:check:28]]</span>
+<h2 class="h2-sm">Thanks, <span id="ct-done-name"></span>. We'll be in touch.</h2>
+<p class="p">We typically reply within 24 hours. In this prototype, nothing was sent.</p>
+<a class="link-arrow" href="#home">Back to home[[ARROW16]]</a>
+</div>
+</div>
+<aside class="stack g16 sticky-side">
+<div class="card-blue stack g10"><span class="corner soft" aria-hidden="true"></span><p class="kicker" style="color:#D6DDF7">Central intake</p><p class="stat-v" style="color:#FFFFFF;font-size:36px;font-variant-numeric:tabular-nums">1-800-704-4341</p><button class="b-white b-sm" type="button" data-copy="1-800-704-4341" style="align-self:flex-start">Copy number</button></div>
+<div class="card stack g14">
+<div class="row g12" style="flex-wrap:nowrap;align-items:flex-start"><span class="icon-box">[[I:phone:22]]</span><div class="stack" style="gap:2px"><strong class="h4">NYC regional office</strong><span class="small">(718) 535-3100 · Fax (718) 872-2450</span><span class="small">5923 Strickland Ave, Brooklyn, NY 11234</span></div></div>
+<div class="row g12" style="flex-wrap:nowrap;align-items:flex-start"><span class="icon-box">[[I:mail:22]]</span><div class="stack" style="gap:2px"><strong class="h4">Email</strong><span class="small">info@americareny.com</span></div></div>
+<div class="row g12" style="flex-wrap:nowrap;align-items:flex-start"><span class="icon-box">[[I:pin:22]]</span><div class="stack" style="gap:2px"><strong class="h4">Offices across New York</strong><a class="link-arrow" href="#locations" style="font-size:14px">See all locations[[ARROW16]]</a></div></div>
+</div>
+<div class="card-pale stack g10"><p class="h4">Are you a clinician?</p><p class="small">Send a secure referral and our intake team takes it from there.</p><a class="b-line b-sm" href="#refer" style="align-self:flex-start">Refer a patient</a></div>
+</aside>
+</div>
+</section>
+</div>

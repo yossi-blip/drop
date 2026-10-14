@@ -1,0 +1,137 @@
+<div class="route" data-route="refer" data-title="Refer a patient" hidden>
+<section class="clip bg-ink on-ink">
+<div aria-hidden="true" class="stripe" style="background:rgba(255,255,255,.05)"></div>
+<div class="wrap rel split g56" style="padding-top:40px;padding-bottom:64px;align-items:end">
+<div class="stack g18">
+<nav class="crumbs" aria-label="Breadcrumb" style="color:#C3CCEE"><a href="#home" style="color:#C3CCEE">Home</a><span aria-hidden="true">/</span><span>Refer a patient</span></nav>
+<p class="eyebrow on-dark r1">For physicians, hospitals &amp; care managers</p>
+<h1 class="h1 r2" style="color:#FFFFFF">Refer a patient. <em style="color:#AFC0FF">We'll take it from here.</em></h1>
+<p class="lead r3">We closely follow your patient's care plan and keep you updated on their progress. We're available 24/7 to help with compliance, medication monitoring and a wide range of home health services.</p>
+</div>
+<div class="g2 g12 r4">
+<div class="card-ink stack g6" style="padding:20px"><p class="kicker" style="color:#AFC0FF">Start of care</p><p class="h3" style="color:#FFFFFF">Typically within 24 hours</p><p class="small">of your referral</p></div>
+<div class="card-ink stack g6" style="padding:20px"><p class="kicker" style="color:#AFC0FF">Intake</p><p class="h4" style="color:#FFFFFF;font-variant-numeric:tabular-nums">718-535-3100 ext. 3296</p><p class="small">Fax 718-872-2450</p></div>
+<div class="card-ink stack g6 span2" style="padding:20px;background:#2940C2;grid-column:1/-1"><p class="kicker" style="color:#D6DDF7">Priority care line</p><p class="h4" style="color:#FFFFFF;font-variant-numeric:tabular-nums">917-992-5529</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap split-l g56" style="align-items:start">
+<div>
+<form class="card stack g24" id="rf-form" data-multistep data-review="1" data-done="#rf-done" data-prefix="RF" novalidate style="padding:clamp(24px,3.5vw,40px)">
+<div class="stack g10">
+<div class="steps" aria-hidden="true"><span class="step-dot on"></span><span class="step-dot"></span><span class="step-dot"></span><span class="step-dot"></span></div>
+<p class="kicker step-label" aria-live="polite">Step 1 of 4 · Patient</p>
+</div>
+<div class="notice warn">[[I:lock:20]]<span><strong>Prototype:</strong> nothing is sent or stored. Use made-up details only. The live version must run on encrypted, HIPAA-compliant handling.</span></div>
+
+<div class="stack g20" data-step data-name="Patient">
+<p class="legend">Patient information</p>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-name">Patient name <span class="req">*</span></label><input class="input" id="rf-name" name="patient" data-review-label="Patient" required></div>
+<div class="field"><label class="label" for="rf-dob">Date of birth <span class="req">*</span></label><input class="input" id="rf-dob" name="dob" type="date" data-review-label="Date of birth" required></div>
+<div class="field"><label class="label" for="rf-phone">Patient phone <span class="req">*</span></label><input class="input" id="rf-phone" name="pphone" type="tel" required></div>
+<div class="field"><label class="label" for="rf-living">Living arrangement</label><select class="input" id="rf-living" name="living" data-review-label="Living arrangement"><option value="">Select</option><option>Lives alone</option><option>Lives with family</option><option>Lives with a caregiver</option><option>Other</option></select></div>
+<div class="field span2"><label class="label" for="rf-addr">Address <span class="req">*</span></label><input class="input" id="rf-addr" name="address" autocomplete="street-address" required></div>
+<div class="field"><label class="label" for="rf-city">City <span class="req">*</span></label><input class="input" id="rf-city" name="city" data-review-label="City" required></div>
+<div class="field"><label class="label" for="rf-zip">ZIP <span class="req">*</span></label><input class="input" id="rf-zip" name="pzip" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" required></div>
+<div class="field"><label class="label" for="rf-ec">Emergency contact <span class="req">*</span></label><input class="input" id="rf-ec" name="ec" required></div>
+<div class="field"><label class="label" for="rf-ecp">Emergency contact phone <span class="req">*</span></label><input class="input" id="rf-ecp" name="ecphone" type="tel" required></div>
+</div>
+<p class="err-msg step-msg" hidden>Please complete the highlighted fields.</p>
+<div class="row between g12"><span></span><button class="b-red" type="button" data-next>Continue[[ARROW]]</button></div>
+</div>
+
+<div class="stack g20" data-step data-name="Insurance" hidden>
+<p class="legend">Insurance</p>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-mcr">Medicare #</label><input class="input" id="rf-mcr" name="medicare"></div>
+<div class="field"><label class="label" for="rf-mcd">Medicaid #</label><input class="input" id="rf-mcd" name="medicaid"></div>
+<div class="field"><label class="label" for="rf-hmo">Other insurance / HMO #</label><input class="input" id="rf-hmo" name="hmo"></div>
+<div class="field"><label class="label" for="rf-auth">Authorization number</label><input class="input" id="rf-auth" name="auth"></div>
+</div>
+<p class="help">Enter whichever apply. Our intake team verifies coverage and collects any other identifiers securely by phone.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back>Back</button><button class="b-red" type="button" data-next>Continue[[ARROW]]</button></div>
+</div>
+
+<div class="stack g20" data-step data-name="Clinical" hidden>
+<div class="card-sky stack g12" style="padding:22px">
+<div class="row between g10"><p class="h4" style="display:flex;align-items:center;gap:8px">[[I:spark:20]]Paste the progress note, we fill the clinical fields</p><span class="pill white">AI assist</span></div>
+<textarea class="input" id="rf-note-text" rows="4" placeholder="Paste or dictate the last visit note: diagnoses, meds, allergies, mobility, plan… (demo: use made-up text)"></textarea>
+<div class="row between g10"><button class="b-blue b-sm" type="button" id="rf-extract">Extract fields</button><p class="small" id="rf-extract-out" role="status"></p></div>
+</div>
+<p class="legend">Physician</p>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-md">Physician name <span class="req">*</span></label><input class="input" id="rf-md" name="physician" data-review-label="Physician" required></div>
+<div class="field"><label class="label" for="rf-mdp">Physician phone <span class="req">*</span></label><input class="input" id="rf-mdp" name="mdphone" type="tel" required></div>
+<div class="field"><label class="label" for="rf-npi">NPI # <span class="req">*</span></label><input class="input" id="rf-npi" name="npi" inputmode="numeric" maxlength="10" data-review-label="NPI" required></div>
+<div class="field"><label class="label" for="rf-lic">License # <span class="req">*</span></label><input class="input" id="rf-lic" name="license" required></div>
+<div class="field"><label class="label" for="rf-last">Date of last MD visit <span class="req">*</span></label><input class="input" id="rf-last" name="lastvisit" type="date" required></div>
+<div class="field"><span class="label">Last visit progress note <span class="req">*</span></span><label class="drop" for="rf-note" style="min-height:50px;flex-direction:row;gap:10px">[[I:upload:20]]<span id="rf-note-name">Choose a file</span></label><input class="sr" id="rf-note" name="note" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required></div>
+</div>
+<p class="legend" style="margin-top:6px">Diagnoses &amp; status</p>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-dx1">Diagnosis 1 <span class="req">*</span></label><input class="input" id="rf-dx1" name="dx1" data-review-label="Primary diagnosis" required></div>
+<div class="field"><label class="label" for="rf-dx2">Diagnosis 2</label><input class="input" id="rf-dx2" name="dx2"></div>
+<div class="field"><label class="label" for="rf-amb">Ambulation status</label><select class="input" id="rf-amb" name="ambulation"><option value="">Select</option><option>Independent</option><option>Assistive device</option><option>Needs assistance</option><option>Wheelchair</option><option>Bedbound</option></select></div>
+<div class="field"><label class="label" for="rf-ms">Mental status <span class="req">*</span></label><select class="input" id="rf-ms" name="mental" required><option value="">Select</option><option>Alert and oriented</option><option>Forgetful</option><option>Confused</option><option>Other</option></select></div>
+<div class="field"><label class="label" for="rf-all">Allergies <span class="req">*</span></label><input class="input" id="rf-all" name="allergies" placeholder="NKDA if none" required></div>
+<div class="field"><label class="label" for="rf-hosp">Recent hospitalization date</label><input class="input" id="rf-hosp" name="hosp" type="date"></div>
+<div class="field span2"><label class="label" for="rf-reason">Reason for home care <span class="req">*</span></label><textarea class="input" id="rf-reason" name="reason" data-review-label="Reason for home care" required></textarea></div>
+<div class="field span2"><label class="label" for="rf-meds">Medications</label><textarea class="input" id="rf-meds" name="meds" placeholder="Name, dosage, route and frequency, one per line"></textarea></div>
+</div>
+<p class="err-msg step-msg" hidden>Please complete the highlighted fields.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back>Back</button><button class="b-red" type="button" data-next>Continue[[ARROW]]</button></div>
+</div>
+
+<div class="stack g20" data-step data-name="Services &amp; signature" hidden>
+<div class="stack g12">
+<p class="legend" id="rf-svc-l">Home health care services requested</p>
+<div class="row g8" data-chips="rf-svc" data-multi data-required role="group" aria-labelledby="rf-svc-l">
+<button class="ch" type="button" data-val="RN" aria-pressed="false">RN · Nursing</button>
+<button class="ch" type="button" data-val="PT" aria-pressed="false">PT · Physical therapy</button>
+<button class="ch" type="button" data-val="OT" aria-pressed="false">OT · Occupational therapy</button>
+<button class="ch" type="button" data-val="ST" aria-pressed="false">ST · Speech therapy</button>
+<button class="ch" type="button" data-val="HHA" aria-pressed="false">HHA · Home health aide</button>
+<button class="ch" type="button" data-val="SW" aria-pressed="false">SW · Social work</button>
+</div>
+<input type="hidden" id="rf-svc" name="services" data-review-label="Services requested">
+<p class="err-msg chips-err" hidden>Choose at least one service.</p>
+</div>
+<div class="stack g8"><p class="kicker">Review</p><div class="review"></div></div>
+<div class="card-pale stack g8" id="rf-missing" style="padding:18px"></div>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-sign">Physician signature (type full name) <span class="req">*</span></label><input class="input" id="rf-sign" name="signature" required style="font-family:'P22 Mackinac',Literata,Georgia,serif;font-size:20px"></div>
+<div class="field"><label class="label" for="rf-copy">Email a copy of this referral to</label><input class="input" id="rf-copy" name="copy" type="email"></div>
+<label class="check span2" style="min-height:auto;padding:12px 14px;align-items:flex-start"><input type="checkbox" id="rf-attest" required style="margin-top:2px"><span style="font-size:14px">I certify this referral is accurate and authorize Americare to begin intake. <span class="req">*</span></span></label>
+</div>
+<p class="err-msg step-msg" hidden>Choose a service, sign, and confirm the certification.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back>Back</button><button class="b-red" type="submit">Submit referral[[ARROW]]</button></div>
+</div>
+</form>
+
+<div class="confirm" id="rf-done" data-done-panel hidden>
+<span class="okmark">[[I:check:28]]</span>
+<h2 class="h2-sm">Referral received for <span data-fill="patient"></span>.</h2>
+<p class="p">Reference <span class="code ref-code" style="color:#1B1F2E"></span>. Our intake team will confirm coverage and contact <span data-fill="physician"></span>'s office. Care typically begins within 24 hours of a referral.</p>
+<p class="small">Prototype: nothing was sent.</p>
+<div class="row g12"><a class="b-blue" href="#home">Back to home</a><button class="b-line" type="button" data-restart="#rf-form">Refer another patient</button></div>
+</div>
+</div>
+
+<aside class="stack g16 sticky-side">
+<div class="card-pale stack g14">
+<p class="h4">Our commitment to referring partners</p>
+<ul class="ticks">
+<li>We follow your patient's care plan closely</li>
+<li>You get updates on their progress</li>
+<li>Available 24/7 for compliance and medication monitoring</li>
+<li>Care typically begins within 24 hours</li>
+</ul>
+</div>
+<div class="card stack g10"><p class="h4">Prefer to fax?</p><p class="small">Send referrals and progress notes to <strong style="color:#1B1F2E">718-872-2450</strong>.</p><button class="b-line b-sm" type="button" data-copy="718-872-2450" style="align-self:flex-start">Copy fax number</button></div>
+</aside>
+</div>
+</section>
+</div>

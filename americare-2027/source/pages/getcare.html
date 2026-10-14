@@ -1,0 +1,106 @@
+<div class="route" data-route="get-care" data-title="Get care" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap rel stack g18" style="padding-top:40px;padding-bottom:56px">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Get care</span></nav>
+<p class="eyebrow r1" data-i18n="gc_eyebrow">New patient inquiry</p>
+<h1 class="h1 r2"><span data-i18n="gc_h1a">Let's get you</span> <em data-i18n="gc_h1b">the right care.</em></h1>
+<p class="lead r3 maxw-md"><span data-i18n="gc_lead">Three short steps. A nurse reviews your answers and reaches out to you. Prefer to talk? Call</span> <strong style="color:#1B1F2E;white-space:nowrap">1-800-704-4341</strong>.</p>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap split-l g56" style="align-items:start">
+<div>
+<form class="card stack g24" id="gc-form" data-multistep data-done="#gc-done" data-prefix="AC" novalidate style="padding:clamp(24px,3.5vw,40px)">
+<div class="stack g10">
+<div class="steps" aria-hidden="true"><span class="step-dot on"></span><span class="step-dot"></span><span class="step-dot"></span></div>
+<p class="kicker step-label" aria-live="polite">Step 1 of 3 · About the person</p>
+</div>
+
+<div class="stack g24" data-step data-name="About the person">
+<div class="stack g12">
+<p class="legend" id="gc-who-l" data-i18n="gc_who">Who is the care for?</p>
+<div class="row g8" data-chips="gc-who" data-required role="group" aria-labelledby="gc-who-l">
+<button class="ch" type="button" data-val="My parent" aria-pressed="false" data-i18n="who_parent">My parent</button>
+<button class="ch" type="button" data-val="My spouse or partner" aria-pressed="false" data-i18n="who_spouse">My spouse or partner</button>
+<button class="ch" type="button" data-val="Myself" aria-pressed="false" data-i18n="who_me">Myself</button>
+<button class="ch" type="button" data-val="My child" aria-pressed="false" data-i18n="who_child">My child</button>
+<button class="ch" type="button" data-val="Another relative or friend" aria-pressed="false">Another relative or friend</button>
+</div>
+<input type="hidden" id="gc-who" name="who">
+<p class="err-msg chips-err" hidden>Choose who the care is for.</p>
+</div>
+<div class="stack g12">
+<p class="legend" id="gc-need-l" data-i18n="gc_need">What's going on?</p>
+<div class="row g8" data-chips="gc-need" data-required role="group" aria-labelledby="gc-need-l">
+<button class="ch" type="button" data-val="Coming home from the hospital" aria-pressed="false">Coming home from the hospital</button>
+<button class="ch" type="button" data-val="Help with daily living" aria-pressed="false">Help with daily living</button>
+<button class="ch" type="button" data-val="Recovering from surgery or a fall" aria-pressed="false">Recovering from surgery or a fall</button>
+<button class="ch" type="button" data-val="Managing a chronic condition" aria-pressed="false">Managing a chronic condition</button>
+<button class="ch" type="button" data-val="Memory or behavioral health" aria-pressed="false">Memory or behavioral health</button>
+<button class="ch" type="button" data-val="A child with developmental needs" aria-pressed="false">A child with developmental needs</button>
+<button class="ch" type="button" data-val="Something else" aria-pressed="false">Something else</button>
+</div>
+<input type="hidden" id="gc-need" name="need">
+<p class="err-msg chips-err" hidden>Choose what's going on.</p>
+</div>
+<p class="err-msg step-msg" hidden>Please answer both questions.</p>
+<div class="row between g12"><span></span><button class="b-red" type="button" data-next><span data-i18n="gc_cont">Continue</span>[[ARROW]]</button></div>
+</div>
+
+<div class="stack g20" data-step data-name="Care details" hidden>
+<div class="fgrid">
+<div class="field"><label class="label" for="gc-zip"><span data-i18n="gc_zip">ZIP code where care is needed</span> <span class="req">*</span></label><input class="input" id="gc-zip" name="zip" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" required></div>
+<div class="field"><label class="label" for="gc-lang" data-i18n="gc_lang">Preferred language</label><select class="input" id="gc-lang" name="language"><option>English</option><option>Español</option><option>中文</option><option>Русский</option><option>हिन्दी</option><option>Another language</option></select></div>
+<div class="field span2"><label class="label" for="gc-program" data-i18n="gc_prog">Type of care you're asking about</label><select class="input" id="gc-program" name="program"><option value="">Not sure yet</option><option>Short Term Care</option><option>Long Term Care</option><option>MLTC</option><option>NHTD</option><option>Pediatric</option><option>Private Pay</option><option>PCA</option><option>Other</option></select><p class="help">Not sure? Leave it blank. Our nurse will help you figure it out.</p></div>
+</div>
+<div class="stack g12">
+<p class="legend" style="font-size:19px" id="gc-when-l" data-i18n="gc_when">When do you need care to start?</p>
+<div class="row g8" data-chips="gc-when" role="group" aria-labelledby="gc-when-l">
+<button class="ch" type="button" data-val="As soon as possible" aria-pressed="false">As soon as possible</button>
+<button class="ch" type="button" data-val="Within a few weeks" aria-pressed="false">Within a few weeks</button>
+<button class="ch" type="button" data-val="Just exploring" aria-pressed="false">Just exploring</button>
+</div>
+<input type="hidden" id="gc-when" name="when">
+</div>
+<p class="err-msg step-msg" hidden>Please enter a 5-digit ZIP code.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back data-i18n="gc_back">Back</button><button class="b-red" type="button" data-next><span data-i18n="gc_cont">Continue</span>[[ARROW]]</button></div>
+</div>
+
+<div class="stack g20" data-step data-name="How to reach you" hidden>
+<div class="notice warn">[[I:lock:20]]<span data-i18n="gc_proto">Prototype: nothing you type here is sent or stored. Don't enter real personal or medical information.</span></div>
+<div class="fgrid">
+<div class="field"><label class="label" for="gc-first"><span data-i18n="gc_first">First name</span> <span class="req">*</span></label><input class="input" id="gc-first" name="first" autocomplete="given-name" required></div>
+<div class="field"><label class="label" for="gc-last"><span data-i18n="gc_last">Last name</span> <span class="req">*</span></label><input class="input" id="gc-last" name="last" autocomplete="family-name" required></div>
+<div class="field"><label class="label" for="gc-phone"><span data-i18n="gc_phone">Phone</span> <span class="req">*</span></label><input class="input" id="gc-phone" name="phone" type="tel" autocomplete="tel" required></div>
+<div class="field"><label class="label" for="gc-email"><span data-i18n="gc_email">Email</span> <span class="req">*</span></label><input class="input" id="gc-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field span2"><label class="label" for="gc-msg" data-i18n="gc_msg">Anything else we should know?</label><textarea class="input" id="gc-msg" name="message" placeholder="Diagnosis, hospital, schedule, questions…"></textarea></div>
+</div>
+<p class="err-msg step-msg" hidden>Please complete the highlighted fields.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back data-i18n="gc_back">Back</button><button class="b-red" type="submit"><span data-i18n="gc_submit">Send to a nurse</span>[[ARROW]]</button></div>
+</div>
+</form>
+
+<div class="confirm" id="gc-done" data-done-panel hidden>
+<span class="okmark">[[I:check:28]]</span>
+<h2 class="h2-sm">Thank you, <span data-fill="first"></span>. A nurse will reach out to you.</h2>
+<p class="p">We'll call <strong data-fill="phone" style="color:#1B1F2E"></strong> to talk through care for <span data-fill="who" data-fallback="your loved one"></span>. Your reference number is <span class="code ref-code" style="color:#1B1F2E"></span>.</p>
+<ul class="ticks"><li>A nurse reviews your answers and calls you</li><li>We check coverage and match the right team</li><li>Care begins at home</li></ul>
+<p class="small">Prototype: nothing was sent.</p>
+<div class="row g12"><a class="b-blue" href="#home">Back to home</a><button class="b-line" type="button" data-restart="#gc-form">Start another inquiry</button></div>
+</div>
+</div>
+
+<aside class="stack g16 sticky-side">
+<div class="card-pale stack g12">
+<p class="h4" data-i18n="gc_next_t">What happens next</p>
+<div class="num-row" style="grid-template-columns:40px minmax(0,1fr);padding:14px 0"><span class="num" style="font-size:24px">1</span><p class="p" style="font-size:15px" data-i18n="gc_n1">A nurse reviews your answers and reaches out.</p></div>
+<div class="num-row" style="grid-template-columns:40px minmax(0,1fr);padding:14px 0"><span class="num" style="font-size:24px">2</span><p class="p" style="font-size:15px" data-i18n="gc_n2">We check coverage and match clinicians who fit your needs and language.</p></div>
+<div class="num-row" style="grid-template-columns:40px minmax(0,1fr);padding:14px 0"><span class="num" style="font-size:24px">3</span><p class="p" style="font-size:15px" data-i18n="gc_n3">Care begins at home, and your coordinator stays with you.</p></div>
+</div>
+<div class="card stack g10"><p class="h4">Are you a physician?</p><p class="small">Send a patient referral with clinical details instead.</p><a class="b-line b-sm" href="#refer" style="align-self:flex-start">Refer a patient</a></div>
+</aside>
+</div>
+</section>
+</div>

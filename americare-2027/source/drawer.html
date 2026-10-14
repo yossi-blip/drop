@@ -1,0 +1,23 @@
+<div class="ask-drawer" id="ask-drawer" role="dialog" aria-modal="false" aria-labelledby="ask-drawer-title" hidden>
+<div class="ask-head">
+<div class="stack" style="gap:2px">
+<p class="h4" id="ask-drawer-title" style="color:#FFFFFF;display:flex;align-items:center;gap:8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4"></path><path d="M12 17v4"></path><path d="M3 12h4"></path><path d="M17 12h4"></path><path d="M12 8l1.5 2.5L16 12l-2.5 1.5L12 16l-1.5-2.5L8 12l2.5-1.5z"></path></svg><span data-i18n="ask_title">Ask Americare</span></p>
+<p class="small" style="color:#C3CCEE" data-i18n="ask_sub">Answers about care at home, in your language.</p>
+</div>
+<div class="row g6">
+<button class="ask-icon" type="button" id="ask-clear" data-i18n-aria="ask_clear" aria-label="Clear"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M9 7V4h6v3"></path><path d="M6 7l1 13h10l1-13"></path></svg></button>
+<button class="ask-icon" type="button" id="ask-close" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg></button>
+</div>
+</div>
+<div class="ask-log" id="ask-log" aria-live="polite"></div>
+<div class="ask-sugg" id="ask-sugg"></div>
+<form class="ask-form" id="ask-form" novalidate>
+<label class="sr" for="ask-in" data-i18n="ask_ph">Ask anything…</label>
+<textarea class="ask-in" id="ask-in" rows="1" data-i18n-ph="ask_ph" placeholder="Ask anything…"></textarea>
+<button class="b-blue" type="submit" id="ask-send" style="min-height:44px;padding:0 16px" data-i18n-aria="ask_send" aria-label="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button>
+</form>
+<div class="ask-foot">
+<button class="b-line b-sm" type="button" id="ask-nurse" data-i18n="ask_nurse">Have a nurse call me</button>
+<p class="ask-note" data-i18n="ask_disc">Not medical advice. In an emergency, call 911.</p>
+</div>
+</div>

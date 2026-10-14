@@ -1,0 +1,369 @@
+/* ---------------- AI layer: Care Navigator, Ask drawer, referral extraction, intake desk ---------------- */
+(() => {
+  'use strict';
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const AC = window.AC;
+  const t = (k) => window.t(k);
+  const langName = () => (window.I18N[window.LANG] || window.I18N.en)._name;
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  /* ---------- Claude ---------- */
+  const use = (n) => (window.claude && window.claude.use ? window.claude.use(n).catch(() => null) : Promise.resolve(null));
+  const sampleP = use('sample');
+  let sampleOK = null;
+  sampleP.then((s) => { sampleOK = !!s; document.body.classList.toggle('ai-live', !!s); });
+
+  const FACTS = [
+    'Americare is a New York home health care agency founded in 1982, serving all five NYC boroughs, Long Island and the Hudson Valley (Westchester, Rockland, Putnam, Orange, Dutchess, Sullivan, Ulster). Central intake: 1-800-704-4341. Care teams speak 15+ languages; the website offers English, Spanish, Chinese, Russian and Hindi.',
+    'SKILLED NURSING (id skilled): Americare Certified Special Services, a Certified Home Health Agency (CHHA). Health monitoring, medication management, wound care, patient and caregiver education, care coordination. Available 24/7; a nurse is assigned within 24 hours of the first call. Typical payer: Medicare (short-term), Medicaid, insurance.',
+    'HOME HEALTH AIDES / PERSONAL CARE (id hha): Americare Inc., a Licensed Home Care Services Agency (LHCSA). HHAs do basic health tasks (vital signs, prescribed exercises) under a nurse; PCAs give non-medical help with bathing, grooming, dressing, meals, housekeeping, errands, companionship. A few hours a week or around the clock. Typical payer: Medicaid, often through an MLTC plan; or private pay.',
+    'HEALTH MANAGEMENT (id hm): programs for stroke, Parkinson’s, multiple sclerosis, heart disease, hypertension, diabetes and palliative care.',
+    'BEHAVIORAL HEALTH (id bh): specially trained nurses and aides for PTSD, schizophrenia, insomnia, dementia, bipolar disorder, anxiety and depression, at home.',
+    'NHTD MEDICAID WAIVER (id nhtd): for New Yorkers 18+ who need nursing-home level of care and are Medicaid-eligible; fully covered by Medicaid; a service coordinator confirms eligibility; Americare helps with the paperwork.',
+    'THERAPY (id therapy): Americare Therapy Services: physical, occupational and speech therapy at home, often combined with skilled nursing after surgery, stroke, injury or a fall.',
+    'AMERIKIDS (id amerikids): pediatric nursing, aides and PT/OT/speech for children 3 to 18 who qualify for OPWDD services (developmental disabilities), in the five boroughs, 24/7.',
+    'ATTENCIA (id attencia): private-pay homecare with hand-picked, NYS-certified caregivers matched on language, culture and personality, an RN-built care plan, and the family meeting candidates first.',
+    'PHARMACEUTICAL SERVICES (id pharm): prepackaged, presorted medications through the affiliate Medpack Pharmacy.',
+    'PAYING FOR CARE: Medicare covers short-term skilled nursing and therapy but generally not long-term daily help. Medicaid may cover aide services after an assessment, often through an MLTC plan. Private pay is available through Attencia. Intake confirms coverage for each person; never promise coverage.',
+    'HOSPITAL DISCHARGE: the first 72 hours home carry the highest readmission risk. Physician referrals: care typically begins within 24 hours. Clinicians refer online or by fax 718-872-2450; intake 718-535-3100 ext. 3296.',
+    'CAREERS: free home health aide certification training, 15 business days plus 1 practical day, in Brooklyn, Staten Island, Queens, the Bronx and Westchester, taught in English, Spanish and Russian. Open roles on Workday.'
+  ].join('\n');
+
+  const SERVICES = {
+    skilled: { label: 'Skilled Nursing (CHHA)', route: 'skilled-nursing', need: 'Coming home from the hospital' },
+    hha: { label: 'Home Health Aide / Personal Care', route: 'home-health-aides', need: 'Help with daily living' },
+    therapy: { label: 'Rehabilitation Therapy', route: 'therapy', need: 'Recovering from surgery or a fall' },
+    hm: { label: 'Health Management', route: 'health-management', need: 'Managing a chronic condition' },
+    bh: { label: 'Behavioral Health', route: 'behavioral-health', need: 'Memory or behavioral health' },
+    nhtd: { label: 'NHTD Medicaid Waiver', route: 'nhtd', need: 'Help with daily living' },
+    amerikids: { label: 'Amerikids (pediatric)', route: 'amerikids', need: 'A child with developmental needs' },
+    attencia: { label: 'Attencia private pay', route: 'attencia', need: 'Help with daily living' },
+    pharm: { label: 'Pharmaceutical Services', route: 'care', need: 'Managing a chronic condition' }
+  };
+
+  /* ---------- emergency guard (multilingual keywords) ---------- */
+  const EMERG = /chest pain|can'?t breathe|cannot breathe|not breathing|stopped breathing|unconscious|unresponsive|passed out|face droop|slurred|stroke right now|having a stroke|severe bleeding|bleeding heavily|overdose|suicid|kill (him|her|my)self|seizure|choking|heart attack|dolor en el pecho|no puede respirar|no respira|inconsciente|derrame cerebral ahora|sangrado|sobredosis|suicid|боль в груди|не дышит|без сознания|инсульт сейчас|кровотечение|передозировк|суицид|胸痛|呼吸困难|无法呼吸|昏迷|不省人事|大出血|中风了|自杀|सीने में दर्द|सांस नहीं|बेहोश|खून बह|आत्महत्या/i;
+  const isEmergency = (s) => EMERG.test(s || '');
+
+  /* ---------- local triage (works without Claude) ---------- */
+  function localTriage(text, who) {
+    const s = (text || '').toLowerCase();
+    const has = (re) => re.test(s);
+    const ids = [];
+    const add = (id, why) => { if (!ids.find((x) => x.id === id)) ids.push({ id, why }); };
+    if (who === 'child' || has(/\b(child|son|daughter|kid|autis|developmental|opwdd|pediatric|niñ|hij[oa]|autism|ребен|сын|доч|аутиз|孩子|儿子|女儿|自闭|बेट|बच्च|ऑटिज़्म)/)) add('amerikids', 'Children 3–18 with developmental needs who qualify for OPWDD.');
+    if (has(/\b(discharge|hospital|surgery|fracture|wound|incision|post-?op|alta|cirug|fractura|выпис|больниц|операци|перелом|出院|手术|骨折|अस्पताल|सर्जरी|फ्रैक्चर)/)) { add('skilled', 'Nursing for the first weeks home: medications, wound checks, monitoring.'); add('therapy', 'Therapy rebuilds strength and mobility after a hospital stay.'); }
+    if (has(/\b(fell|fall|falls|balance|walk|mobility|hip|stroke|weak|cane|walker|cay|caíd|camin|упал|падени|ходит|инсульт|摔|跌倒|走路|中风|गिर|चलने|स्ट्रोक)/)) { add('therapy', 'Physical and occupational therapy at home for balance, strength and safe movement.'); add('skilled', 'A nurse monitors recovery and coordinates with the doctor.'); }
+    if (has(/\b(dementia|alzheimer|memory|confus|wander|demencia|memoria|деменц|альцгейм|памят|痴呆|阿尔茨海默|记忆|डिमेंशिया|भूल|याददाश्त)/)) { add('bh', 'Specially trained staff for dementia and behavior changes.'); add('hha', 'An aide for safety, routine and companionship during the day.'); }
+    if (has(/\b(depress|anxiet|ptsd|bipolar|schizo|insomnia|mental|ansied|depres|депресс|тревог|焦虑|抑郁|失眠|अवसाद|चिंता)/)) add('bh', 'Behavioral health support at home.');
+    if (has(/\b(diabet|heart|cardiac|chf|hypertens|blood pressure|parkinson|sclerosis|copd|oxygen|dialysis|chronic|diabet|corazón|presión|сахар|диабет|сердц|давлени|паркинсон|糖尿病|心脏|高血压|帕金森|मधुमेह|दिल|रक्तचाप)/)) { add('hm', 'A condition-specific care plan built with the physicians.'); add('skilled', 'Nursing for monitoring and medication management.'); }
+    if (has(/\b(hospice|palliative|end of life|comfort care|paliativ|паллиатив|临终|安宁|उपशामक)/)) add('hm', 'Palliative care focused on comfort, dignity and family support.');
+    if (has(/\b(bath|dress|meal|cook|housekeep|errand|shopping|alone|lonely|companion|daily|aide|caregiver|help at home|baño|comid|sola|solo|acompañ|купа|одеват|готов|один|одна|компан|洗澡|做饭|一个人|陪伴|नहा|खाना|अकेल)/)) add('hha', 'Personal care, meals, housekeeping and companionship.');
+    if (has(/\b(nursing home|nursing-home|medicaid|waiver|asilo|дом престарелых|медикейд|养老院|医疗补助|नर्सिंग होम)/)) add('nhtd', 'Nursing-home-level services at home, fully covered by Medicaid for eligible adults.');
+    if (has(/\b(private pay|out of pocket|pay myself|no insurance|privado|частн|自费|निजी)/)) add('attencia', 'Hand-picked caregivers and an RN-built plan, paid privately.');
+    if (has(/\b(medication|medicine|pills|meds|medicament|pastill|лекарств|таблет|药|दवा)/)) add('pharm', 'Prepackaged, presorted medications.');
+    if (!ids.length) { add('hha', 'Help with daily living is the most common starting point.'); add('skilled', 'A nurse assesses needs at home and builds the plan.'); }
+    let coverage = 'Our intake team checks Medicare, Medicaid/MLTC and insurance benefits and explains your options before care begins.';
+    if (has(/medicare/)) coverage = 'Medicare may cover short-term skilled nursing and therapy at home, but generally not long-term daily help. Intake confirms.';
+    if (has(/medicaid|mltc|медикейд|医疗补助/)) coverage = 'Medicaid may cover aide services after an assessment, often through an MLTC plan. Intake confirms eligibility.';
+    if (ids[0].id === 'amerikids') coverage = 'Amerikids serves children who qualify for OPWDD services. Intake helps confirm eligibility.';
+    if (ids[0].id === 'attencia') coverage = 'Attencia is private pay and coordinates with your other coverage.';
+    let urgency = 'routine';
+    if (has(/\b(today|tomorrow|tonight|this week|friday|monday|asap|urgent|right away|hoy|mañana|esta semana|сегодня|завтра|на этой неделе|今天|明天|本周|आज|कल|इस हफ़्ते)/)) urgency = 'urgent';
+    if (isEmergency(text)) urgency = 'emergency';
+    const summary = who === 'patient' ? 'A patient referral. Our intake team coordinates with your office and care typically begins within 24 hours.'
+      : 'Based on what you wrote, here is a starting point. A nurse confirms the plan at a free in-home assessment.';
+    return { urgency, summary, services: ids.slice(0, 3), coverage, next_step: who === 'patient' ? 'Send a referral with the clinical details and we take it from there.' : 'Tell us how to reach you and a nurse will call to confirm the plan.', follow_up_questions: [], local: true };
+  }
+
+  function triagePrompt(text, who) {
+    const whoLabel = { parent: 'their parent', spouse: 'their spouse or partner', me: 'themselves', child: 'their child', patient: 'a patient they are referring (the user is a clinician)' }[who] || 'a loved one';
+    return 'You are the Care Navigator on the Americare website (New York home health care). A visitor describes a situation about ' + whoLabel + '. ' +
+      'Using ONLY the facts below, decide which Americare services fit. Rules: never give medical advice or diagnose; never promise coverage (say intake confirms); ' +
+      'if the text describes a possible medical emergency (chest pain, trouble breathing, stroke signs, unresponsive, severe bleeding, overdose, suicidal thoughts), set urgency to "emergency" and tell them to call 911 first. ' +
+      'Write every text field in the SAME LANGUAGE the visitor wrote in (if unclear, use ' + langName() + '). Keep it warm and plain; no markdown.\n\n' +
+      'Reply with ONLY a JSON object: {"urgency":"emergency"|"urgent"|"routine","summary":"1-2 sentences reflecting their situation back","services":[{"id":"skilled|hha|therapy|hm|bh|nhtd|amerikids|attencia|pharm","why":"one short sentence"}] (1 to 3 items, best first),"coverage":"one or two sentences on the likely coverage path","next_step":"one sentence","follow_up_questions":["up to 2 short questions a nurse would ask"]}\n\n' +
+      'FACTS:\n' + FACTS + '\n\nVISITOR WROTE:\n' + text.slice(0, 3000);
+  }
+
+  /* ---------- Care Navigator UI ---------- */
+  const nv = $('#nv');
+  if (nv) {
+    const input = $('#nv-input'), out = $('#nv-out'), textEl = $('#nv-text'), who = $('#who'), goBtn = $('#nv-go');
+    let ctl = null, lastText = '', lastWho = 'parent';
+    $$('[data-nv-ex]', nv).forEach((b) => b.addEventListener('click', () => { textEl.value = b.textContent; textEl.focus(); }));
+    textEl.addEventListener('input', () => { if (/\b(son|daughter|child|kid|hijo|hija|niñ|сын|доч|ребен|儿子|女儿|孩子|बेट|बच्च)\b/i.test(textEl.value) && who.value === 'parent') who.value = 'child'; });
+    textEl.addEventListener('keydown', (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); run(); } });
+
+    function render(r) {
+      const urgent = r.urgency === 'emergency';
+      const svc = (r.services || []).filter((x) => SERVICES[x.id]).slice(0, 3);
+      let h = '';
+      if (urgent) h += '<div class="nv-urgent" role="alert"><strong>' + esc(t('nv_urgent')) + '</strong><span>' + esc(t('nv_urgent_sub')) + '</span></div>';
+      h += '<p class="lead" style="font-size:17px">' + esc(r.summary || '') + '</p>';
+      if (svc.length) {
+        h += '<div class="stack g8"><p class="kicker">' + esc(t('nv_fit')) + '</p><div class="stack g8">' + svc.map((x, i) => '<a class="nv-svc' + (i === 0 ? ' top' : '') + '" href="#' + SERVICES[x.id].route + '"><span class="tri" aria-hidden="true"></span><span class="stack" style="gap:2px;min-width:0"><strong>' + esc(SERVICES[x.id].label) + '</strong><span class="small">' + esc(x.why || '') + '</span></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>').join('') + '</div></div>';
+      }
+      h += '<div class="g2 g12 nv-meta"><div class="stack" style="gap:4px"><p class="kicker">' + esc(t('nv_cov')) + '</p><p class="small">' + esc(r.coverage || '') + '</p></div><div class="stack" style="gap:4px"><p class="kicker">' + esc(t('nv_next')) + '</p><p class="small">' + esc(r.next_step || '') + '</p></div></div>';
+      if (r.follow_up_questions && r.follow_up_questions.length) h += '<p class="small"><em>' + esc(r.follow_up_questions.join(' · ')) + '</em></p>';
+      h += '<div class="row g8">' +
+        (lastWho === 'patient' ? '<button class="b-red" type="button" id="nv-refer">' + esc(t('nv_refer')) + '</button>' : '<button class="b-red" type="button" id="nv-nurse">' + esc(t('nv_nurse')) + '</button>') +
+        '<button class="b-line" type="button" id="nv-follow">' + esc(t('nv_ask')) + '</button><button class="ch" type="button" id="nv-again">' + esc(t('nv_again')) + '</button></div>';
+      if (r.local) h += '<p class="small" style="font-size:12px">' + esc(t('nv_local')) + '</p>';
+      out.innerHTML = h; out.hidden = false; input.hidden = true;
+      const top = svc[0] ? svc[0].id : 'hha';
+      const nurse = $('#nv-nurse', out); if (nurse) nurse.addEventListener('click', () => {
+        AC.pending.prefill = { source: 'Care Navigator', who: lastWho, need: SERVICES[top].need, text: lastText, services: svc.map((x) => SERVICES[x.id].label) };
+        AC.go('get-care');
+      });
+      const ref = $('#nv-refer', out); if (ref) ref.addEventListener('click', () => { AC.pending.refer = { source: 'Care Navigator', reason: lastText, services: svc.map((x) => x.id) }; AC.go('refer'); });
+      $('#nv-follow', out).addEventListener('click', () => window.ASK.open('', { context: 'The visitor used the Care Navigator and wrote: "' + lastText.slice(0, 600) + '". Suggested services: ' + svc.map((x) => SERVICES[x.id].label).join(', ') + '.' }));
+      $('#nv-again', out).addEventListener('click', () => { out.hidden = true; input.hidden = false; textEl.focus(); });
+    }
+    async function run() {
+      const text = textEl.value.trim();
+      if (!text) { textEl.focus(); return; }
+      lastText = text; lastWho = who.value;
+      if (isEmergency(text)) { render(Object.assign(localTriage(text, who.value), { urgency: 'emergency', local: false })); return; }
+      goBtn.disabled = true;
+      out.innerHTML = '<p class="small ai-wait">' + esc(t('nv_thinking')) + '</p>'; out.hidden = false; input.hidden = true;
+      const sample = await sampleP;
+      if (!sample) { render(localTriage(text, who.value)); goBtn.disabled = false; return; }
+      ctl = new AbortController();
+      try {
+        const r = await sample.json(triagePrompt(text, who.value), { modelTier: 'quick', signal: ctl.signal });
+        if (!r || !Array.isArray(r.services)) throw { code: 'invalid_json' };
+        if (isEmergency(text)) r.urgency = 'emergency';
+        render(r);
+      } catch (e) {
+        if (e && (e.code === 'not_granted' || e.code === 'sampling_disabled' || e.code === 'invalid_json' || e.code === 'rate_limited')) render(localTriage(text, who.value));
+        else if (e && e.code === 'refused') { const l = localTriage(text, who.value); l.summary = t('nv_err'); render(l); }
+        else render(localTriage(text, who.value));
+      } finally { goBtn.disabled = false; }
+    }
+    goBtn.addEventListener('click', run);
+    document.addEventListener('langchange', () => { if (!out.hidden && lastText) { /* keep result; labels re-render on next run */ } });
+  }
+
+  /* ---------- Ask drawer ---------- */
+  const SUGG = {
+    home: ['How quickly can care start?', 'Does Medicaid cover a home health aide?', 'Do you have caregivers who speak my language?'],
+    care: ['What is the difference between a CHHA and a LHCSA?', 'Which service fits after a hospital stay?'],
+    'skilled-nursing': ['What does a skilled nurse do at home?', 'Does Medicare cover skilled nursing at home?'],
+    'home-health-aides': ['PCA or HHA, which do I need?', 'Can an aide come every day?'],
+    'health-management': ['How do you help with diabetes at home?', 'What is palliative care?'],
+    'behavioral-health': ['How do you support someone with dementia?', 'Can you help with depression at home?'],
+    nhtd: ['Who is eligible for NHTD?', 'Is there a cost for the NHTD waiver?'],
+    therapy: ['Can I get PT at home instead of a clinic?', 'How long does occupational therapy last?'],
+    amerikids: ['Which children qualify for Amerikids?', 'What services do you offer for kids?'],
+    attencia: ['How is Attencia different?', 'Can I meet the caregiver first?'],
+    about: ['When was Americare founded?', 'How many counties do you serve?'],
+    locations: ['Do you serve Westchester?', 'Where is your Brooklyn office?'],
+    contact: ['What is the fastest way to reach intake?'],
+    'get-care': ['What happens after I submit this form?', 'What should I have ready for the nurse’s call?'],
+    refer: ['How fast can care start after a referral?', 'What should I fax with the referral?'],
+    careers: ['Is the aide training really free?', 'Where is the training held?'],
+    guides: ['What should happen in the first 72 hours after discharge?', 'Does Medicaid cover home care after a hospital stay?'],
+    'guide-discharge': ['Who arranges care after discharge?', 'What does Medicare cover after a hospital stay?'],
+    'intake-desk': ['How should I prioritize a discharge for tomorrow?']
+  };
+  const CANNED = [
+    [/pca|hha|aide|difference|differ/i, 'Home health aides (HHA) do basic health tasks like vital signs and prescribed exercises under a nurse; personal care aides (PCA) give non-medical help with bathing, dressing, meals and housekeeping. Choose a PCA if the person is medically stable, an HHA if they need medical monitoring or mobility help.'],
+    [/chha|lhcsa|licens|certif/i, 'A CHHA (Certified Home Health Agency) provides skilled nursing and therapy, usually short-term and often Medicare-covered. A LHCSA (Licensed Home Care Services Agency) provides aides for personal care, often through Medicaid/MLTC or private pay. Americare runs both.'],
+    [/nhtd|waiver|nursing home/i, 'The NHTD Medicaid Waiver lets adults 18+ who need nursing-home level of care and are Medicaid-eligible live at home with the same services. It is fully covered by Medicaid, and Americare helps with the paperwork.'],
+    [/medicaid|mltc/i, 'Medicaid may cover home health aide services after an assessment, often through a managed long-term care (MLTC) plan. Our intake team confirms what is covered before care begins.'],
+    [/medicare/i, 'Medicare covers short-term skilled nursing and therapy at home, but generally not long-term daily help. Intake confirms coverage for each person.'],
+    [/cover|pay|cost|price|insurance/i, 'Coverage depends on the plan: Medicare for short-term skilled care and therapy, Medicaid/MLTC for aide services, and Attencia for private pay. Intake checks benefits and explains the options at no cost.'],
+    [/child|kid|autis|amerikids|opwdd|pediatric/i, 'Amerikids provides nursing, aides and PT/OT/speech therapy for children 3 to 18 who qualify for OPWDD services, across the five boroughs, 24/7.'],
+    [/therap|physical|occupational|speech/i, 'Americare Therapy Services brings physical, occupational and speech therapy to your home, often combined with skilled nursing after surgery, stroke, injury or a fall.'],
+    [/discharge|hospital|72/i, 'The first 72 hours after discharge carry the highest readmission risk. Short-term support (aides, skilled nursing, therapy) helps. For physician referrals, care typically begins within 24 hours.'],
+    [/language|speak|spanish|russian|chinese|hindi|bilingual/i, 'Our care teams speak more than 15 languages and we match caregivers on language and culture. The website is available in English, Spanish, Chinese, Russian and Hindi.'],
+    [/train|become|job|career|hire|work/i, 'Americare offers free home health aide certification: 15 business days plus 1 practical day, in Brooklyn, Staten Island, Queens, the Bronx and Westchester, taught in English, Spanish and Russian. Graduates are fast-tracked for hire.'],
+    [/fast|quick|soon|start|begin|how long/i, 'A home health nurse is assigned within 24 hours of your first call, and for physician referrals care typically begins within 24 hours.'],
+    [/24|hours|night|weekend|overnight/i, 'Skilled nursing and Amerikids are available 24/7, and aide care can be a few hours a week or around the clock.'],
+    [/where|office|county|counties|serve|area|brooklyn|queens|bronx|westchester|long island/i, 'Americare serves all five NYC boroughs, Long Island and the Hudson Valley (Westchester, Rockland, Putnam, Orange, Dutchess, Sullivan, Ulster), with 11 office locations.'],
+    [/found|history|old|years|since|1982/i, 'Americare was founded in 1982 and has cared for New York families at home for over 40 years, with a 5-star CMS rating and Joint Commission accreditation.'],
+    [/attencia|private/i, 'Attencia is Americare’s private-pay division: hand-picked, NYS-certified caregivers matched on language, culture and personality, an RN-built care plan, and you meet candidates first.']
+  ];
+  function canned(q) {
+    const hit = CANNED.find(([re]) => re.test(q));
+    return (hit ? hit[1] : 'A care coordinator can answer that at 1-800-704-4341, or use Get care and a nurse will reach out.') + '\n\n' + 'Prefer a person? Call 1-800-704-4341.';
+  }
+  function askPrompt(turns, context) {
+    const rules = 'You are "Ask Americare", the assistant on the Americare website (New York home health care). Use ONLY the facts below. ' +
+      'Reply in ' + langName() + ' unless the visitor writes in another language; then reply in theirs. 2 to 5 short, warm, plain sentences; no markdown, no bullet symbols. ' +
+      'Never give medical advice or diagnose; never promise coverage (say intake confirms). If anything sounds like an emergency, say to call 911 first. ' +
+      'If the facts do not cover it, say a care coordinator can help at 1-800-704-4341. When a next step makes sense, suggest the Get care form or, for clinicians, the referral form.' +
+      (context ? '\n\nCONTEXT: ' + context : '') + '\n\nFACTS:\n' + FACTS;
+    return [{ role: 'user', content: rules }].concat(turns);
+  }
+  const drawer = $('#ask-drawer');
+  const ASK = { turns: [], context: '', open(q, opts) {}, close() {} };
+  window.ASK = ASK;
+  if (drawer) {
+    const log = $('#ask-log'), sugg = $('#ask-sugg'), form = $('#ask-form'), inp = $('#ask-in'), send = $('#ask-send'), fab = $('#ask-fab');
+    let ctl = null, busy = false;
+    const bubble = (role, text, cls) => { const d = document.createElement('div'); d.className = 'bub ' + role + (cls ? ' ' + cls : ''); d.textContent = text; log.appendChild(d); log.scrollTop = log.scrollHeight; return d; };
+    const hello = () => { log.innerHTML = ''; bubble('ai', t('ask_hello')); };
+    const paintSugg = () => {
+      const route = AC.current();
+      const list = SUGG[route] || SUGG.home;
+      sugg.innerHTML = '<span class="small" style="padding:4px 0">' + esc(t('ask_sugg')) + ':</span>' + list.map((q) => '<button class="ch ch-sm" type="button">' + esc(q) + '</button>').join('');
+      $$('button', sugg).forEach((b) => b.addEventListener('click', () => submit(b.textContent)));
+    };
+    ASK.open = (q, opts) => {
+      if (opts && opts.context) ASK.context = opts.context;
+      drawer.hidden = false; fab.setAttribute('aria-expanded', 'true');
+      if (!log.children.length) hello();
+      paintSugg();
+      if (q) submit(q); else inp.focus();
+    };
+    ASK.close = () => { drawer.hidden = true; fab.setAttribute('aria-expanded', 'false'); };
+    fab.addEventListener('click', () => (drawer.hidden ? ASK.open('') : ASK.close()));
+    $('#ask-close').addEventListener('click', ASK.close);
+    $('#ask-clear').addEventListener('click', () => { if (ctl) ctl.abort(); ASK.turns = []; hello(); });
+    $('#ask-nurse').addEventListener('click', () => { AC.pending.prefill = { source: 'Ask Americare', text: ASK.turns.filter((x) => x.role === 'user').map((x) => x.content).join('\n').slice(0, 800) }; ASK.close(); AC.go('get-care'); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !drawer.hidden) ASK.close(); });
+    document.addEventListener('route', paintSugg);
+    document.addEventListener('langchange', () => { if (!ASK.turns.length) hello(); paintSugg(); });
+    inp.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
+    inp.addEventListener('input', () => { inp.style.height = 'auto'; inp.style.height = Math.min(inp.scrollHeight, 120) + 'px'; });
+    form.addEventListener('submit', (e) => { e.preventDefault(); submit(inp.value); });
+    async function submit(q) {
+      q = (q || '').trim(); if (!q || busy) return;
+      inp.value = ''; inp.style.height = 'auto';
+      bubble('me', q);
+      if (isEmergency(q)) { bubble('ai', t('nv_urgent') + ' ' + t('nv_urgent_sub'), 'warn'); return; }
+      ASK.turns.push({ role: 'user', content: q });
+      busy = true; send.disabled = true;
+      const out = bubble('ai', t('ask_thinking'), 'wait');
+      const sample = await sampleP;
+      if (!sample) { out.classList.remove('wait'); out.textContent = t('ask_off') + '\n\n' + canned(q); ASK.turns.push({ role: 'assistant', content: out.textContent }); busy = false; send.disabled = false; return; }
+      ctl = new AbortController();
+      try {
+        const { text } = await sample(askPrompt(ASK.turns.slice(-8), ASK.context), { modelTier: 'quick', cache: false, signal: ctl.signal, onText: ({ text }) => { out.classList.remove('wait'); out.textContent = text; log.scrollTop = log.scrollHeight; } });
+        ASK.turns.push({ role: 'assistant', content: text });
+      } catch (e) {
+        out.classList.remove('wait');
+        const code = e && e.code;
+        if (code === 'cancelled') { out.textContent = e.text || ''; if (!out.textContent) out.remove(); }
+        else if (code === 'not_granted' || code === 'sampling_disabled' || code === 'not_declared') { out.textContent = t('ask_off') + '\n\n' + canned(q); }
+        else if (code === 'rate_limited') out.textContent = (e.text ? e.text + '\n\n' : '') + 'Too many questions right now. Try again in a minute, or call 1-800-704-4341.';
+        else if (code === 'refused') out.textContent = 'That one is best answered by a person. Call 1-800-704-4341.';
+        else out.textContent = e && e.text ? e.text : canned(q);
+        if (ASK.turns[ASK.turns.length - 1].role === 'user') ASK.turns.pop();
+      } finally { busy = false; send.disabled = false; }
+    }
+  }
+
+  /* ---------- referral: paste a progress note ---------- */
+  const noteBox = $('#rf-note-text');
+  if (noteBox) {
+    const btn = $('#rf-extract'), status = $('#rf-extract-out');
+    const set = (id, v) => { const el = document.getElementById(id); if (el && v) { el.value = v; el.classList.add('filled'); } };
+    function localExtract(txt) {
+      const g = (re) => { const m = txt.match(re); return m ? m[1].trim().replace(/\s+/g, ' ').slice(0, 200) : ''; };
+      const dx = txt.match(/(?:diagnos[ie]s|dx|impression|assessment)\s*[:\-]\s*([^\n.;]+)/i);
+      const dxs = dx ? dx[1].split(/[;,]|\d\.\s|\band\b/).map((s) => s.trim()).filter(Boolean) : [];
+      return { diagnoses: dxs.slice(0, 2), allergies: g(/allerg\w*\s*[:\-]\s*([^\n.;]+)/i), medications: g(/(?:medications?|meds|rx)\s*[:\-]\s*([^\n;]+?)(?:\.\s+[A-Z]|$)/im), reason: g(/(?:plan|reason for (?:home care|referral)|recommend\w*)\s*[:\-]\s*([^\n;]+)/i), hospitalization: g(/(?:admitted|hospitali[sz]ed|discharged)\s*(?:on)?\s*[:\-]?\s*(\d{4}-\d{2}-\d{2}|\d{1,2}\/\d{1,2}\/\d{2,4})/i), ambulation: /wheelchair/i.test(txt) ? 'Wheelchair' : /walker|cane/i.test(txt) ? 'Assistive device' : '', mental: /alert and oriented|a&o/i.test(txt) ? 'Alert and oriented' : /confus/i.test(txt) ? 'Confused' : '', services: ['RN'].concat(/physical therap|\bPT\b/i.test(txt) ? ['PT'] : [], /occupational|\bOT\b/i.test(txt) ? ['OT'] : [], /speech|\bSLP\b|\bST\b/i.test(txt) ? ['ST'] : [], /aide|\bHHA\b|ADLs?/i.test(txt) ? ['HHA'] : []) };
+    }
+    function apply(r) {
+      if (r.diagnoses && r.diagnoses[0]) set('rf-dx1', r.diagnoses[0]);
+      if (r.diagnoses && r.diagnoses[1]) set('rf-dx2', r.diagnoses[1]);
+      set('rf-all', r.allergies); set('rf-meds', r.medications); set('rf-reason', r.reason);
+      if (r.hospitalization && /^\d{4}-\d{2}-\d{2}$/.test(r.hospitalization)) set('rf-hosp', r.hospitalization);
+      if (r.ambulation) set('rf-amb', r.ambulation); if (r.mental) set('rf-ms', r.mental);
+      (r.services || []).forEach((id) => AC.setChip('rf-svc', id));
+      const n = $$('#rf-form .filled').length;
+      status.textContent = n ? 'Filled ' + n + ' field' + (n > 1 ? 's' : '') + ' from the note. Please review every value before you continue.' : 'Nothing recognizable in that note. Fill the fields manually.';
+      status.className = 'small ' + (n ? 'ok-msg' : 'err-msg');
+      setTimeout(() => $$('#rf-form .filled').forEach((el) => el.classList.remove('filled')), 6000);
+    }
+    btn.addEventListener('click', async () => {
+      const txt = noteBox.value.trim(); if (!txt) { noteBox.focus(); return; }
+      btn.disabled = true; status.className = 'small ai-wait'; status.textContent = 'Reading the note…';
+      const sample = await sampleP;
+      if (!sample) { apply(localExtract(txt)); btn.disabled = false; return; }
+      try {
+        const r = await sample.json('Extract referral fields from this clinical note for a home health intake form. Reply with ONLY JSON: {"diagnoses":["primary","secondary"],"allergies":"","medications":"name dose route frequency, one per line","reason":"one sentence: reason for home care","hospitalization":"YYYY-MM-DD or empty","ambulation":"Independent|Assistive device|Needs assistance|Wheelchair|Bedbound|","mental":"Alert and oriented|Forgetful|Confused|Other|","services":["RN","PT","OT","ST","HHA","SW"] (only those the note supports)}. Leave fields empty when the note does not say. Do not invent.\n\nNOTE:\n' + txt.slice(0, 6000), { modelTier: 'quick' });
+        apply(r || localExtract(txt));
+      } catch (e) { apply(localExtract(txt)); }
+      finally { btn.disabled = false; }
+    });
+    // completeness check at the review step
+    document.addEventListener('rf-review', () => {
+      const miss = [];
+      if (!$('#rf-mcr').value && !$('#rf-mcd').value && !$('#rf-hmo').value) miss.push('No insurance number entered (Medicare, Medicaid or HMO). Intake will collect it by phone.');
+      if (!$('#rf-dx2').value) miss.push('Only one diagnosis listed.');
+      if (!$('#rf-meds').value) miss.push('No medications listed.');
+      if (!$('#rf-hosp').value) miss.push('No recent hospitalization date. Add it if this is a discharge, it affects start-of-care priority.');
+      if (!$('#rf-copy').value) miss.push('No email for a copy of this referral.');
+      const box = $('#rf-missing'); if (!box) return;
+      box.innerHTML = miss.length ? '<p class="kicker" style="color:#C42B3A">Before you submit</p><ul class="ticks">' + miss.map((m) => '<li>' + esc(m) + '</li>').join('') + '</ul>' : '<p class="small ok-msg">Everything intake needs is here.</p>';
+    });
+  }
+
+  /* ---------- Intake Desk (demo queue, synthetic data) ---------- */
+  const SEED = [
+    { id: 'AC-240913', when: 'Today 08:12', source: 'Care Navigator', who: 'My parent', name: 'R. Alvarez (demo)', area: 'Brooklyn 11234', lang: 'Español', text: 'Mi madre sale del hospital el viernes después de una fractura de cadera. Vive sola en Flatbush y necesita ayuda para bañarse y con las medicinas.', services: ['Skilled Nursing (CHHA)', 'Rehabilitation Therapy', 'Home Health Aide / Personal Care'], urgency: 'urgent', status: 'New' },
+    { id: 'RF-508211', when: 'Today 07:40', source: 'Physician referral', who: 'Dr. K. Patel, Maimonides (demo)', name: 'M. Chen (demo)', area: 'Brooklyn 11223', lang: '中文', text: 'Dx: CHF, HTN. Discharged 2026-10-12. Needs RN for medication management and HHA for ADLs. Lives with daughter, works days.', services: ['RN', 'HHA'], urgency: 'urgent', status: 'In review' },
+    { id: 'AC-240897', when: 'Yesterday 16:05', source: 'Care Navigator', who: 'My child', name: 'D. Okafor, age 9 (demo)', area: 'Bronx 10451', lang: 'English', text: 'My son has a developmental disability and qualifies for OPWDD. We need an aide after school and speech therapy at home.', services: ['Amerikids (pediatric)'], urgency: 'routine', status: 'New' },
+    { id: 'AC-240880', when: 'Yesterday 11:22', source: 'Ask Americare', who: 'My spouse or partner', name: 'L. Goldberg (demo)', area: 'Spring Valley 10977', lang: 'English', text: 'My wife has early dementia. I need someone a few days a week so I can rest. We would pay privately and want someone who speaks Yiddish.', services: ['Behavioral Health', 'Attencia private pay'], urgency: 'routine', status: 'Contacted' }
+  ];
+  const INTAKE = { rows: SEED.slice(), log(entry) {
+    const id = 'AC-' + Math.floor(100000 + Math.random() * 899999);
+    INTAKE.rows.unshift(Object.assign({ id, when: 'Just now', name: 'Session visitor', area: '—', status: 'New' }, entry));
+    INTAKE.render();
+  } };
+  const desk = $('#desk');
+  INTAKE.render = () => {
+    if (!desk) return;
+    const pr = (r) => r.urgency === 'emergency' ? ['Emergency', 'red'] : r.urgency === 'urgent' ? ['High', 'red'] : ['Normal', ''];
+    desk.innerHTML = INTAKE.rows.map((r, i) => {
+      const [pl, pc] = pr(r);
+      return '<div class="desk-row" data-i="' + i + '"><button class="desk-main" type="button" aria-expanded="false">' +
+        '<span class="code">' + esc(r.id) + '</span><span class="stack" style="gap:2px;min-width:0"><strong>' + esc(r.name) + '</strong><span class="small">' + esc(r.source) + ' · ' + esc(r.who || '') + ' · ' + esc(r.area) + ' · ' + esc(r.lang || '') + '</span></span>' +
+        '<span class="pill ' + pc + '">' + pl + '</span><span class="pill white" style="border:1px solid #DCE6F5">' + esc(r.status) + '</span><span class="small">' + esc(r.when) + '</span></button>' +
+        '<div class="desk-detail" hidden><p class="p" style="font-size:15px">' + esc(r.text) + '</p>' +
+        '<div class="row g6">' + (r.services || []).map((s) => '<span class="tag">' + esc(s) + '</span>').join('') + '</div>' +
+        '<div class="desk-ai"><div class="row between g10"><p class="kicker">AI intake brief</p><button class="b-line b-sm" type="button" data-brief>Generate brief</button></div><div class="ask-out" data-brief-out></div></div>' +
+        '<div class="row g10"><label class="small" for="st-' + i + '">Status</label><select class="input" id="st-' + i + '" style="min-height:40px;max-width:200px" data-status><option' + (r.status === 'New' ? ' selected' : '') + '>New</option><option' + (r.status === 'In review' ? ' selected' : '') + '>In review</option><option' + (r.status === 'Contacted' ? ' selected' : '') + '>Contacted</option><option' + (r.status === 'Scheduled' ? ' selected' : '') + '>Scheduled</option><option' + (r.status === 'Closed' ? ' selected' : '') + '>Closed</option></select></div></div></div>';
+    }).join('');
+    $$('.desk-main', desk).forEach((b) => b.addEventListener('click', () => { const d = b.nextElementSibling; d.hidden = !d.hidden; b.setAttribute('aria-expanded', String(!d.hidden)); }));
+    $$('[data-status]', desk).forEach((s) => s.addEventListener('change', () => { INTAKE.rows[+s.closest('.desk-row').dataset.i].status = s.value; INTAKE.render(); }));
+    $$('[data-brief]', desk).forEach((b) => b.addEventListener('click', async () => {
+      const r = INTAKE.rows[+b.closest('.desk-row').dataset.i]; const out = b.closest('.desk-ai').querySelector('[data-brief-out]');
+      b.disabled = true; out.textContent = 'Thinking…';
+      const sample = await sampleP;
+      const local = 'Summary: ' + (r.who || 'Family') + ' request via ' + r.source + ' in ' + r.area + (r.lang && r.lang !== 'English' ? ', prefers ' + r.lang : '') + '. Suggested service line: ' + ((r.services || [])[0] || 'Assessment') + '. Priority: ' + (r.urgency === 'urgent' ? 'high, time-sensitive start of care' : 'normal') + '. First call: confirm the start date, coverage (Medicare/Medicaid/MLTC) and who makes decisions in the household.';
+      if (!sample) { out.textContent = local; b.disabled = false; return; }
+      try {
+        const { text } = await sample('You are the intake coordinator assistant at Americare (NY home health care). Write a brief for this inquiry in English, plain text, 4 short lines labeled Summary / Service line / Priority / First call. Use only the facts given and the catalog. Never promise coverage.\n\nCATALOG:\n' + FACTS + '\n\nINQUIRY (synthetic demo data):\n' + JSON.stringify({ source: r.source, who: r.who, area: r.area, language: r.lang, text: r.text, suggested: r.services, urgency: r.urgency }), { modelTier: 'quick', onText: ({ text }) => { out.textContent = text; } });
+        out.textContent = text;
+      } catch (e) { out.textContent = (e && e.text) || local; }
+      finally { b.disabled = false; }
+    }));
+    const c = $('#desk-count'); if (c) c.textContent = INTAKE.rows.length + ' open inquiries';
+  };
+  INTAKE.render();
+  window.INTAKE = INTAKE;
+
+  // forms feed the desk (session only, nothing persisted)
+  document.addEventListener('gc-submitted', (e) => INTAKE.log({ source: AC.lastSource || 'Get care form', who: e.detail.who, text: (e.detail.need || '') + (e.detail.message ? ' — ' + e.detail.message : ''), area: e.detail.zip || '—', lang: e.detail.language || 'English', services: [], urgency: /soon as possible/i.test(e.detail.when || '') ? 'urgent' : 'routine', name: (e.detail.first || 'Visitor') + ' (session)' }));
+  document.addEventListener('rf-submitted', (e) => INTAKE.log({ source: AC.lastReferSource || 'Physician referral', who: e.detail.physician, text: 'Dx: ' + (e.detail.dx1 || '') + (e.detail.dx2 ? ', ' + e.detail.dx2 : '') + '. ' + (e.detail.reason || ''), area: (e.detail.city || '') + ' ' + (e.detail.pzip || ''), lang: 'English', services: (e.detail.services || '').split(', ').filter(Boolean), urgency: e.detail.hosp ? 'urgent' : 'routine', name: (e.detail.patient || 'Patient') + ' (session)' }));
+
+  /* ---------- language ---------- */
+  const langBtnLabel = $('#lang-label');
+  function setLang(code, announce) {
+    window.applyLang(code);
+    if (langBtnLabel) langBtnLabel.textContent = langName();
+    $$('#lang-menu button[data-lang]').forEach((b) => b.setAttribute('aria-checked', String(b.dataset.lang === window.LANG)));
+    $$('[data-mlang]').forEach((b) => { const on = b.dataset.mlang === window.LANG; b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on)); });
+    if (announce && window.LANG !== 'en') AC.toast(t('lang_note').replace('{lang}', langName()));
+  }
+  $$('#lang-menu button[data-lang]').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang, true)));
+  $$('[data-mlang]').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.mlang, true)));
+  let saved = 'en'; try { saved = localStorage.getItem('ac-lang') || 'en'; } catch (e) { /* no storage */ }
+  setLang(saved, false);
+})();

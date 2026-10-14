@@ -1,0 +1,34 @@
+<div class="r4 nav-card" id="nv" style="background:#FFFFFF;border-radius:24px;padding:26px 28px 24px;box-shadow:0 1px 2px rgba(18,26,75,.06),0 30px 60px -30px rgba(18,26,75,.35);display:flex;flex-direction:column;gap:16px;max-width:660px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap">
+<h2 style="margin:0;font-family:'P22 Mackinac',Literata,Georgia,serif;font-weight:500;font-size:24px;line-height:1.2;color:#1B1F2E" data-i18n="nv_title">What's going on?</h2>
+<span class="pill" style="gap:6px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4"></path><path d="M12 17v4"></path><path d="M3 12h4"></path><path d="M17 12h4"></path><path d="M12 8l1.5 2.5L16 12l-2.5 1.5L12 16l-1.5-2.5L8 12l2.5-1.5z"></path></svg><span data-i18n="nv_badge">Care Navigator</span></span>
+</div>
+<div id="nv-input" class="stack g14">
+<div class="stack g6">
+<label class="small" for="nv-text" data-i18n="nv_hint">Describe it in your own words, in any language.</label>
+<textarea class="input nv-text" id="nv-text" rows="3" data-i18n-ph="nv_ph" placeholder="e.g. My mother is coming home from the hospital on Friday after a hip fracture. She lives alone in Flatbush and speaks mostly Russian."></textarea>
+</div>
+<div class="row g6" style="font-size:13px;color:#4F5566">
+<span data-i18n="nv_try">Try:</span>
+<button class="ch ch-sm" type="button" data-nv-ex data-i18n="nv_ex1">Dad fell and needs help at home</button>
+<button class="ch ch-sm" type="button" data-nv-ex data-i18n="nv_ex2">Hospital discharge this week</button>
+<button class="ch ch-sm" type="button" data-nv-ex data-i18n="nv_ex3">Mom has dementia and is alone all day</button>
+<button class="ch ch-sm" type="button" data-nv-ex data-i18n="nv_ex4">My son has autism and needs an aide</button>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end">
+<div style="flex:1 1 200px;display:flex;flex-direction:column;gap:6px;min-width:0">
+<label for="who" style="font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#4F5566" data-i18n="nv_who">Care is for</label>
+<select id="who" class="input" style="min-height:48px">
+<option value="parent" data-i18n="who_parent">My parent</option>
+<option value="spouse" data-i18n="who_spouse">My spouse or partner</option>
+<option value="me" data-i18n="who_me">Myself</option>
+<option value="child" data-i18n="who_child">My child</option>
+<option value="patient" data-i18n="who_patient">A patient I'm referring</option>
+</select>
+</div>
+<button class="b-red" type="button" id="nv-go" style="flex:1 1 220px;min-height:48px"><span data-i18n="nv_btn">Find the right care</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button>
+</div>
+</div>
+<div id="nv-out" class="stack g14" hidden aria-live="polite"></div>
+<p style="margin:0;display:flex;align-items:center;gap:8px;font-size:14px;color:#4F5566"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2940C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span><span data-i18n="ask_disc">Not medical advice. In an emergency, call 911.</span> <strong style="color:#1B1F2E;white-space:nowrap">1-800-704-4341</strong></span></p>
+</div>

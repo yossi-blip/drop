@@ -1,0 +1,832 @@
+=== FILE: pages/attencia.html ===
+<div class="route" data-route="attencia" data-title="Attencia private pay" hidden>
+<section class="clip bg-ink on-ink">
+<div aria-hidden="true" class="stripe" style="background:rgba(255,255,255,.05)"></div>
+<div aria-hidden="true" style="position:absolute;right:-160px;bottom:-140px;width:640px;height:560px;background:rgba(41,64,194,.35);clip-path:polygon(50% 0,100% 100%,0 100%)"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb" style="color:#C3CCEE"><a href="#home" style="color:#C3CCEE">Home</a><span aria-hidden="true">/</span><a href="#care" style="color:#C3CCEE">Care at home</a><span aria-hidden="true">/</span><span>Attencia</span></nav>
+<p class="eyebrow on-dark r1">Attencia® · Private pay</p>
+<h1 class="h1 r2" style="color:#FFFFFF">You can now have our <em style="color:#AFC0FF">undivided Attencia®.</em></h1>
+<p class="lead r3">The ultimate homecare for private pay patients. Attencia® is Americare's dedicated private pay division, designed to give you even more control over your homecare.</p>
+<div class="row g12 r4"><a class="b-red" href="#get-care">Get started with Attencia<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a class="b-ghost" href="#contact">Talk to us</a></div>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true" style="background:#DA3545"></div>
+<div class="frame"><img class="settle" src="img/attencia-wheelchair.jpg" alt="A caregiver sharing a quiet moment at the table with a woman who uses a wheelchair"></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap stack g40">
+<div class="head-row">
+<div class="stack g14 maxw-lg"><p class="eyebrow">Craft your ideal care experience</p><h2 class="h2">What it's like to have our full Attencia®.</h2></div>
+<p class="p maxw-sm">Fully accredited, Attencia® lets you shape every part of your care — down to who walks through your door.</p>
+</div>
+<div class="split g56" style="align-items:center">
+<div class="g2 g16">
+<div class="card reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1L3.2 9.4l6.1-.8z"></path></svg></span><h3 class="h4">Only the best</h3><p class="p" style="font-size:15px">Handpicked caregivers certified in New York State, personally interviewed and vetted beyond standard checks.</p></div>
+<div class="card reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c3 2 9 2 12 0v-5"></path></svg></span><h3 class="h4">Comprehensive training</h3><p class="p" style="font-size:15px">Every caregiver completes Attencia's specialized training program.</p></div>
+<div class="card reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg></span><h3 class="h4">Perfect match</h3><p class="p" style="font-size:15px">Caregivers matched on language, culture and personality, with respect for your independence.</p></div>
+<div class="card reveal stack g10"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5"></path><path d="M10 13h6"></path><path d="M10 17h6"></path></svg></span><h3 class="h4">Informed choices</h3><p class="p" style="font-size:15px">Meet candidates first. A registered nurse crafts your care plan and reviews it regularly.</p></div>
+</div>
+<div class="photo reveal" style="min-height:480px">
+<div class="frame plain"><img src="img/attencia-door.jpg" alt="An Attencia care coordinator greeting a couple at their front door"></div>
+<div class="float" style="left:20px;bottom:20px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span class="stack" style="line-height:1.3"><strong style="font-size:14px;color:#1B1F2E">Meet your caregiver first</strong><span style="font-size:12px;color:#4F5566">then decide together</span></span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap split g64" style="align-items:start">
+<div class="stack g18">
+<p class="eyebrow">Who Attencia® serves</p>
+<h2 class="h2">Suited for patients living with:</h2>
+<div class="row g8" style="margin-top:6px">
+<span class="tag">Dementia</span><span class="tag">Depression</span><span class="tag">Anxiety disorders</span><span class="tag">Congestive heart failure</span><span class="tag">Diabetes</span><span class="tag">Hypertension</span><span class="tag">Orthopedic problems</span><span class="tag">And other diagnoses</span>
+</div>
+<div class="card stack g10" style="margin-top:16px"><p class="kicker red">Specialized care</p><h3 class="h4">Alzheimer's and dementia</h3><p class="p">Caregivers receive sensitivity and skills training to soften the impact on a spouse or family.</p></div>
+</div>
+<div class="stack g16">
+<p class="eyebrow">The Attencia® commitment</p>
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 14a4.5 4.5 0 0 0 7 0"></path><path d="M9 9.5h.01"></path><path d="M15 9.5h.01"></path></svg></span><div class="stack g6"><h3 class="h4">Companionship</h3><p class="p">Help with everything from doctor's appointments to family events.</p></div></div>
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="18" cy="18" r="2.5"></circle><path d="M8.3 10.9l7.4-3.7"></path><path d="M8.3 13.1l7.4 3.7"></path></svg></span><div class="stack g6"><h3 class="h4">Continuity of services</h3><p class="p">Care that coordinates smoothly with your other insurance coverage.</p></div></div>
+<div class="num-row reveal"><span class="num" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span><div class="stack g6"><h3 class="h4">Peace of mind</h3><p class="p">Especially for family members who live far away.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap stack g32">
+<div class="stack g14 maxw-lg"><p class="eyebrow">Backed by Americare's trusted legacy</p><h2 class="h2-sm">Over 40 years of care, now with your undivided Attencia®.</h2></div>
+<div class="g4 g16">
+<div class="card-pale reveal stack g8"><h3 class="h4">Unmatched excellence</h3><p class="p" style="font-size:15px">Consistently rated one of the top providers by CMS.</p></div>
+<div class="card-pale reveal stack g8"><h3 class="h4">Extensive experience</h3><p class="p" style="font-size:15px">Over 40 years serving New York families.</p></div>
+<div class="card-pale reveal stack g8"><h3 class="h4">Cultural diversity</h3><p class="p" style="font-size:15px">Caregivers who share your language and culture.</p></div>
+<div class="card-pale reveal stack g8"><h3 class="h4">Genuine compassion</h3><p class="p" style="font-size:15px">Compassion is the bedrock of all we do.</p></div>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/about.html ===
+<div class="route" data-route="about" data-title="About Americare" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>About</span></nav>
+<p class="eyebrow r1">Who we are</p>
+<h1 class="h1 r2">Healthcare that feels <em>like home.</em></h1>
+<p class="lead r3">We firmly believe that wellness is best nurtured within your own walls. For over 40 years, we've brought care into our patients' homes — with compassion, sensitivity and a personal approach.</p>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/about-table.jpg" alt="An Americare clinician talking with an older man at his dining table"></div>
+<div class="float bob-a" style="right:20px;bottom:28px"><span class="stat-v" style="font-size:30px">1982</span><span class="stack" style="line-height:1.3"><strong style="font-size:14px;color:#1B1F2E">Our story began</strong><span style="font-size:12px;color:#4F5566">over 40 years of care at home</span></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-ink on-ink">
+<div class="wrap stack g32">
+<p class="eyebrow on-dark">Americare today</p>
+<div class="g5 g24 reveal">
+<div class="stack g8"><p class="stat-v">5★</p><p class="stat-l">Rated by the Centers for Medicare &amp; Medicaid Services</p></div>
+<div class="stack g8"><p class="stat-v">11</p><p class="stat-l">Office locations</p></div>
+<div class="stack g8"><p class="stat-v">14</p><p class="stat-l">Counties served</p></div>
+<div class="stack g8"><p class="stat-v">10,000+</p><p class="stat-l">Patients cared for each year</p></div>
+<div class="stack g8"><p class="stat-v">24/7</p><p class="stat-l">Round-the-clock availability</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split g72" style="align-items:center">
+<div class="stack g18">
+<p class="eyebrow">A tradition of care</p>
+<h2 class="h2">The same mission since 1982.</h2>
+<p class="lead">Our story began in 1982 with one mission: deliver high-quality care with compassion, sensitivity and a personal approach. We still follow it every day.</p>
+<p class="p">Today Americare is the preferred home healthcare choice for thousands of New Yorkers, with five-star ratings from government agencies and patient satisfaction surveys — and the same human touch we started with.</p>
+<div class="row g10" style="margin-top:6px"><span class="pill">5-star CMS rating</span><span class="pill">The Joint Commission</span><span class="pill">Newsweek 2026</span></div>
+</div>
+<div class="photo reveal" style="min-height:520px">
+<div class="frame br"><img class="parallax" src="img/team-clinicians.jpg" alt="Two Americare clinicians smiling and applauding"></div>
+<div class="mark br" aria-hidden="true"></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap stack g40">
+<div class="stack g14 maxw-lg"><p class="eyebrow">Our care principles</p><h2 class="h2">What every Americare visit stands on.</h2></div>
+<div class="g3 g20">
+<div class="card reveal stack g12"><span class="corner" aria-hidden="true"></span><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1L3.2 9.4l6.1-.8z"></path></svg></span><h3 class="h3">Excellence in every interaction</h3><p class="p">Our superior care stems from the high standards we set for every team member, backed by ongoing training and career development.</p></div>
+<div class="card reveal stack g12"><span class="corner" aria-hidden="true"></span><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span><h3 class="h3">Compassion and connection</h3><p class="p">Compassion isn't a buzzword for us. It's the bedrock of our service.</p></div>
+<div class="card reveal stack g12"><span class="corner" aria-hidden="true"></span><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6.5 6.5 0 0 1 3.5 6"></path></svg></span><h3 class="h3">Always personal, always human</h3><p class="p">Individual, culturally sensitive care plans for every patient.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split g64" style="align-items:start">
+<div class="stack g18">
+<p class="eyebrow">The Americare companies</p>
+<h2 class="h2">One family of care.</h2>
+<p class="p maxw-sm">Five Americare companies and six affiliates work together, so a family can get nursing, aides, therapy, pediatric care and pharmacy support from one trusted team.</p>
+</div>
+<div class="stack g24">
+<div class="stack g10">
+<a class="row between g12 lift" href="#skilled-nursing" style="padding:18px 20px;border-radius:16px;border:1px solid #DCE6F5;background:#FFFFFF"><span class="stack" style="gap:2px"><strong class="h4">Americare Certified Special Services</strong><span class="small">Certified Home Health Agency (CHHA)</span></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a class="row between g12 lift" href="#home-health-aides" style="padding:18px 20px;border-radius:16px;border:1px solid #DCE6F5;background:#FFFFFF"><span class="stack" style="gap:2px"><strong class="h4">Americare Inc.</strong><span class="small">Licensed Home Care Services Agency (LHCSA)</span></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a class="row between g12 lift" href="#therapy" style="padding:18px 20px;border-radius:16px;border:1px solid #DCE6F5;background:#FFFFFF"><span class="stack" style="gap:2px"><strong class="h4">Americare Therapy Services</strong><span class="small">Physical, occupational and speech therapy</span></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a class="row between g12 lift" href="#attencia" style="padding:18px 20px;border-radius:16px;border:1px solid #DCE6F5;background:#FFFFFF"><span class="stack" style="gap:2px"><strong class="h4">Attencia Private Pay Services</strong><span class="small">Private-pay homecare</span></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a class="row between g12 lift" href="#amerikids" style="padding:18px 20px;border-radius:16px;border:1px solid #DCE6F5;background:#FFFFFF"><span class="stack" style="gap:2px"><strong class="h4">Amerikids</strong><span class="small">Pediatric home care</span></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+<div class="stack g10">
+<p class="kicker">Affiliated companies</p>
+<div class="row g8"><span class="tag">Care Management</span><a class="tag" href="https://www.medpackrx.com" target="_blank" rel="noopener">Medpack Pharmacy <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></a><a class="tag" href="https://www.phytrehab.com" target="_blank" rel="noopener">Phyt Rehab <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></a><span class="tag">PT Plus</span><span class="tag">Global Professional Staffing</span><a class="tag" href="https://www.unitedcareaba.com" target="_blank" rel="noopener">United Care ABA <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></a></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/locations.html ===
+<div class="route" data-route="locations" data-title="Locations" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap rel split g56" style="padding-top:40px;padding-bottom:64px;align-items:end">
+<div class="stack g18">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Locations</span></nav>
+<p class="eyebrow r1">Where we serve</p>
+<h1 class="h1 r2">Rooted in New York's <em>neighborhoods.</em></h1>
+<p class="lead r3">From Brighton Beach to the Bronx to the Hudson Valley, our offices and community outreach centers keep care close to home — across 14 counties.</p>
+</div>
+<div class="card stack g12 r4" style="box-shadow:0 30px 60px -30px rgba(18,26,75,.35);border:0">
+<label class="h4" for="zip3">Check if we serve your area</label>
+<div class="row g10" style="flex-wrap:nowrap">
+<input class="input" id="zip3" type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code" placeholder="ZIP code" data-zip-input style="flex:1;min-width:0">
+<button class="b-blue" type="button" data-zip-check="zip3">Check</button>
+</div>
+<p class="zip-out" id="zip3-out" role="status"></p>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap split g56" style="align-items:start">
+<div class="stack g14 reveal">
+<p class="kicker">New York City</p>
+<p style="margin:0;font-family:'P22 Mackinac',Literata,Georgia,serif;font-size:clamp(28px,2.8vw,40px);line-height:1.3;color:#1B1F2E">Brooklyn · Queens · Manhattan · The Bronx · Staten Island</p>
+</div>
+<div class="stack g14 reveal">
+<p class="kicker">Long Island &amp; Hudson Valley</p>
+<p style="margin:0;font-family:'P22 Mackinac',Literata,Georgia,serif;font-size:clamp(28px,2.8vw,40px);line-height:1.3;color:#2940C2">Long Island · Westchester · Rockland · Putnam · Orange · Dutchess · Sullivan · Ulster</p>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2">
+<div class="wrap stack g32">
+<div class="head-row">
+<div class="stack g14"><p class="eyebrow">Offices &amp; community outreach centers</p><h2 class="h2">Visit us, or we'll come to you.</h2></div>
+<div class="row g8" data-filter-group="#offices" role="group" aria-label="Filter offices">
+<button class="ch ch-sm on" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="ch ch-sm" type="button" data-filter="brooklyn" aria-pressed="false">Brooklyn</button>
+<button class="ch ch-sm" type="button" data-filter="queens" aria-pressed="false">Queens</button>
+<button class="ch ch-sm" type="button" data-filter="manhattan" aria-pressed="false">Manhattan</button>
+<button class="ch ch-sm" type="button" data-filter="bronx" aria-pressed="false">Bronx</button>
+<button class="ch ch-sm" type="button" data-filter="si" aria-pressed="false">Staten Island</button>
+<button class="ch ch-sm" type="button" data-filter="hv" aria-pressed="false">Hudson Valley</button>
+</div>
+</div>
+<div class="g3 g16" id="offices">
+<div class="office" data-tags="brooklyn"><p class="kicker red">Central intake · NYC regional office</p><h3 class="h4">Americare Certified Special Services</h3><p class="addr">5923 Strickland Ave<br>Brooklyn, NY 11234</p><p class="ph">(718) 535-3100</p></div>
+<div class="office" data-tags="brooklyn"><p class="kicker red">Main office</p><h3 class="h4">Americare Inc.</h3><p class="addr">2255 Coleman Street<br>Brooklyn, NY 11234</p><p class="ph">(718) 434-5100</p></div>
+<div class="office" data-tags="manhattan"><p class="kicker red">Office</p><h3 class="h4">Americare Inc. Manhattan</h3><p class="addr">271 Grand Street, 3rd Floor<br>New York, NY 10002</p><p class="ph">(646) 476-8300</p></div>
+<div class="office" data-tags="queens"><p class="kicker red">Community outreach center</p><h3 class="h4">Flushing</h3><p class="addr">133-38 Sanford Avenue<br>Flushing, NY 11355</p><p class="ph">(718) 475-2255</p></div>
+<div class="office" data-tags="queens"><p class="kicker red">Community outreach center</p><h3 class="h4">Forest Hills</h3><p class="addr">102-02 Queens Blvd<br>Forest Hills, NY 11375</p><p class="ph">(718) 434-5100 ext. 2512</p></div>
+<div class="office" data-tags="bronx"><p class="kicker red">Community outreach center</p><h3 class="h4">The Bronx</h3><p class="addr">391 East 149th Street #418<br>Bronx, NY 10451</p><p class="ph">(929) 220-2600 ext. 2630</p></div>
+<div class="office" data-tags="si"><p class="kicker red">Community outreach center</p><h3 class="h4">Staten Island</h3><p class="addr">520 Bay Street, 2nd Floor<br>Staten Island, NY 10304</p><p class="ph">(646) 476-8300</p></div>
+<div class="office" data-tags="hv"><p class="kicker red">Community outreach center</p><h3 class="h4">Wartburg · Mount Vernon</h3><p class="addr">1 Wartburg Place<br>Mount Vernon, NY 10552</p><p class="ph">(914) 215-7654</p></div>
+<div class="office" data-tags="hv"><p class="kicker red">Community outreach center</p><h3 class="h4">Rockland · Spring Valley</h3><p class="addr">1 N Madison Avenue<br>Spring Valley, NY 10977</p><p class="ph">(845) 263-6635</p></div>
+<div class="office" data-tags="brooklyn"><p class="kicker">Affiliate</p><h3 class="h4">Care Management Corp.</h3><p class="addr">171 Kings Hwy<br>Brooklyn, NY 11223</p><p class="ph">(718) 256-6000</p></div>
+</div>
+<div class="notice"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span>Not near an office? Most care happens at home. Call central intake at <strong>1-800-704-4341</strong> and we'll arrange everything.</span></div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/contact.html ===
+<div class="route" data-route="contact" data-title="Contact us" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap rel stack g18" style="padding-top:40px;padding-bottom:56px">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Contact</span></nav>
+<p class="eyebrow r1">Contact us</p>
+<h1 class="h1 r2">We're just <em>a click away.</em></h1>
+<p class="lead r3 maxw-md">We'd love to hear from you. Fill out the form and we'll get back to you, typically within 24 hours.</p>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap split-l g56" style="align-items:start">
+<div>
+<form class="card stack g20" id="ct-form" novalidate style="padding:clamp(24px,3.5vw,40px)">
+<div class="notice warn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span><strong>Prototype:</strong> this form doesn't send anything. Don't enter real personal or medical information.</span></div>
+<div class="fgrid">
+<div class="field"><label class="label" for="ct-first">First name <span class="req">*</span></label><input class="input" id="ct-first" name="first" autocomplete="given-name" required></div>
+<div class="field"><label class="label" for="ct-last">Last name <span class="req">*</span></label><input class="input" id="ct-last" name="last" autocomplete="family-name" required></div>
+<div class="field"><label class="label" for="ct-phone">Phone <span class="req">*</span></label><input class="input" id="ct-phone" name="phone" type="tel" autocomplete="tel" required></div>
+<div class="field"><label class="label" for="ct-email">Email <span class="req">*</span></label><input class="input" id="ct-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field span2"><label class="label" for="ct-subject">What can we help with? <span class="req">*</span></label>
+<select class="input" id="ct-subject" name="subject" required>
+<option value="">Choose a subject</option>
+<option>Requesting Skilled Nursing / Therapy</option>
+<option>Requesting Home Health Aide Services</option>
+<option>Private Pay</option>
+<option>Refer a patient</option>
+<option>Apply for Home Health Aide Training</option>
+<option>Other</option>
+</select></div>
+<div class="field span2" id="ct-resume-wrap" hidden><span class="label">Upload your resume <span class="req">*</span></span>
+<label class="drop" for="ct-resume"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4"></path><path d="M7 9l5-5 5 5"></path><path d="M5 20h14"></path></svg><strong style="color:#1B1F2E">Select or drop a file</strong><span id="ct-resume-name">doc, docx, pdf, jpg or png</span></label>
+<input class="sr" id="ct-resume" name="resume" type="file" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" required></div>
+<fieldset class="fset field span2"><legend class="label" style="margin-bottom:6px">How should we reach you?</legend>
+<div class="radio-row"><label class="check"><input type="radio" name="reach" value="Phone" checked>Phone</label><label class="check"><input type="radio" name="reach" value="Email">Email</label></div></fieldset>
+<div class="field span2"><label class="label" for="ct-msg">Your message <span class="req">*</span></label><textarea class="input" id="ct-msg" name="message" required></textarea></div>
+<label class="check span2" style="min-height:auto;padding:12px 14px;align-items:flex-start"><input type="checkbox" id="ct-consent" required style="margin-top:2px"><span style="font-size:14px">I authorize Americare to contact me by phone, email or text message. <span class="req">*</span></span></label>
+</div>
+<p class="err-msg step-msg" hidden>Please complete the highlighted fields.</p>
+<div class="row between g16">
+<p class="small">This form is not for emergencies. In an emergency, call 911.</p>
+<button class="b-red" type="submit">Send message<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button>
+</div>
+</form>
+<div class="confirm" id="ct-done" hidden>
+<span class="okmark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<h2 class="h2-sm">Thanks, <span id="ct-done-name"></span>. We'll be in touch.</h2>
+<p class="p">We typically reply within 24 hours. In this prototype, nothing was sent.</p>
+<a class="link-arrow" href="#home">Back to home<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+<aside class="stack g16 sticky-side">
+<div class="card-blue stack g10"><span class="corner soft" aria-hidden="true"></span><p class="kicker" style="color:#D6DDF7">Central intake</p><p class="stat-v" style="color:#FFFFFF;font-size:36px;font-variant-numeric:tabular-nums">1-800-704-4341</p><button class="b-white b-sm" type="button" data-copy="1-800-704-4341" style="align-self:flex-start">Copy number</button></div>
+<div class="card stack g14">
+<div class="row g12" style="flex-wrap:nowrap;align-items:flex-start"><span class="icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg></span><div class="stack" style="gap:2px"><strong class="h4">NYC regional office</strong><span class="small">(718) 535-3100 · Fax (718) 872-2450</span><span class="small">5923 Strickland Ave, Brooklyn, NY 11234</span></div></div>
+<div class="row g12" style="flex-wrap:nowrap;align-items:flex-start"><span class="icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span><div class="stack" style="gap:2px"><strong class="h4">Email</strong><span class="small">info@americareny.com</span></div></div>
+<div class="row g12" style="flex-wrap:nowrap;align-items:flex-start"><span class="icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></span><div class="stack" style="gap:2px"><strong class="h4">Offices across New York</strong><a class="link-arrow" href="#locations" style="font-size:14px">See all locations<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div></div>
+</div>
+<div class="card-pale stack g10"><p class="h4">Are you a clinician?</p><p class="small">Send a secure referral and our intake team takes it from there.</p><a class="b-line b-sm" href="#refer" style="align-self:flex-start">Refer a patient</a></div>
+</aside>
+</div>
+</section>
+</div>
+
+=== FILE: pages/getcare.html ===
+<div class="route" data-route="get-care" data-title="Get care" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap rel stack g18" style="padding-top:40px;padding-bottom:56px">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Get care</span></nav>
+<p class="eyebrow r1" data-i18n="gc_eyebrow">New patient inquiry</p>
+<h1 class="h1 r2"><span data-i18n="gc_h1a">Let's get you</span> <em data-i18n="gc_h1b">the right care.</em></h1>
+<p class="lead r3 maxw-md"><span data-i18n="gc_lead">Three short steps. A nurse reviews your answers and reaches out to you. Prefer to talk? Call</span> <strong style="color:#1B1F2E;white-space:nowrap">1-800-704-4341</strong>.</p>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap split-l g56" style="align-items:start">
+<div>
+<form class="card stack g24" id="gc-form" data-multistep data-done="#gc-done" data-prefix="AC" novalidate style="padding:clamp(24px,3.5vw,40px)">
+<div class="stack g10">
+<div class="steps" aria-hidden="true"><span class="step-dot on"></span><span class="step-dot"></span><span class="step-dot"></span></div>
+<p class="kicker step-label" aria-live="polite">Step 1 of 3 · About the person</p>
+</div>
+
+<div class="stack g24" data-step data-name="About the person">
+<div class="stack g12">
+<p class="legend" id="gc-who-l" data-i18n="gc_who">Who is the care for?</p>
+<div class="row g8" data-chips="gc-who" data-required role="group" aria-labelledby="gc-who-l">
+<button class="ch" type="button" data-val="My parent" aria-pressed="false" data-i18n="who_parent">My parent</button>
+<button class="ch" type="button" data-val="My spouse or partner" aria-pressed="false" data-i18n="who_spouse">My spouse or partner</button>
+<button class="ch" type="button" data-val="Myself" aria-pressed="false" data-i18n="who_me">Myself</button>
+<button class="ch" type="button" data-val="My child" aria-pressed="false" data-i18n="who_child">My child</button>
+<button class="ch" type="button" data-val="Another relative or friend" aria-pressed="false">Another relative or friend</button>
+</div>
+<input type="hidden" id="gc-who" name="who">
+<p class="err-msg chips-err" hidden>Choose who the care is for.</p>
+</div>
+<div class="stack g12">
+<p class="legend" id="gc-need-l" data-i18n="gc_need">What's going on?</p>
+<div class="row g8" data-chips="gc-need" data-required role="group" aria-labelledby="gc-need-l">
+<button class="ch" type="button" data-val="Coming home from the hospital" aria-pressed="false">Coming home from the hospital</button>
+<button class="ch" type="button" data-val="Help with daily living" aria-pressed="false">Help with daily living</button>
+<button class="ch" type="button" data-val="Recovering from surgery or a fall" aria-pressed="false">Recovering from surgery or a fall</button>
+<button class="ch" type="button" data-val="Managing a chronic condition" aria-pressed="false">Managing a chronic condition</button>
+<button class="ch" type="button" data-val="Memory or behavioral health" aria-pressed="false">Memory or behavioral health</button>
+<button class="ch" type="button" data-val="A child with developmental needs" aria-pressed="false">A child with developmental needs</button>
+<button class="ch" type="button" data-val="Something else" aria-pressed="false">Something else</button>
+</div>
+<input type="hidden" id="gc-need" name="need">
+<p class="err-msg chips-err" hidden>Choose what's going on.</p>
+</div>
+<p class="err-msg step-msg" hidden>Please answer both questions.</p>
+<div class="row between g12"><span></span><button class="b-red" type="button" data-next><span data-i18n="gc_cont">Continue</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button></div>
+</div>
+
+<div class="stack g20" data-step data-name="Care details" hidden>
+<div class="fgrid">
+<div class="field"><label class="label" for="gc-zip"><span data-i18n="gc_zip">ZIP code where care is needed</span> <span class="req">*</span></label><input class="input" id="gc-zip" name="zip" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" required></div>
+<div class="field"><label class="label" for="gc-lang" data-i18n="gc_lang">Preferred language</label><select class="input" id="gc-lang" name="language"><option>English</option><option>Español</option><option>中文</option><option>Русский</option><option>हिन्दी</option><option>Another language</option></select></div>
+<div class="field span2"><label class="label" for="gc-program" data-i18n="gc_prog">Type of care you're asking about</label><select class="input" id="gc-program" name="program"><option value="">Not sure yet</option><option>Short Term Care</option><option>Long Term Care</option><option>MLTC</option><option>NHTD</option><option>Pediatric</option><option>Private Pay</option><option>PCA</option><option>Other</option></select><p class="help">Not sure? Leave it blank. Our nurse will help you figure it out.</p></div>
+</div>
+<div class="stack g12">
+<p class="legend" style="font-size:19px" id="gc-when-l" data-i18n="gc_when">When do you need care to start?</p>
+<div class="row g8" data-chips="gc-when" role="group" aria-labelledby="gc-when-l">
+<button class="ch" type="button" data-val="As soon as possible" aria-pressed="false">As soon as possible</button>
+<button class="ch" type="button" data-val="Within a few weeks" aria-pressed="false">Within a few weeks</button>
+<button class="ch" type="button" data-val="Just exploring" aria-pressed="false">Just exploring</button>
+</div>
+<input type="hidden" id="gc-when" name="when">
+</div>
+<p class="err-msg step-msg" hidden>Please enter a 5-digit ZIP code.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back data-i18n="gc_back">Back</button><button class="b-red" type="button" data-next><span data-i18n="gc_cont">Continue</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button></div>
+</div>
+
+<div class="stack g20" data-step data-name="How to reach you" hidden>
+<div class="notice warn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span data-i18n="gc_proto">Prototype: nothing you type here is sent or stored. Don't enter real personal or medical information.</span></div>
+<div class="fgrid">
+<div class="field"><label class="label" for="gc-first"><span data-i18n="gc_first">First name</span> <span class="req">*</span></label><input class="input" id="gc-first" name="first" autocomplete="given-name" required></div>
+<div class="field"><label class="label" for="gc-last"><span data-i18n="gc_last">Last name</span> <span class="req">*</span></label><input class="input" id="gc-last" name="last" autocomplete="family-name" required></div>
+<div class="field"><label class="label" for="gc-phone"><span data-i18n="gc_phone">Phone</span> <span class="req">*</span></label><input class="input" id="gc-phone" name="phone" type="tel" autocomplete="tel" required></div>
+<div class="field"><label class="label" for="gc-email"><span data-i18n="gc_email">Email</span> <span class="req">*</span></label><input class="input" id="gc-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field span2"><label class="label" for="gc-msg" data-i18n="gc_msg">Anything else we should know?</label><textarea class="input" id="gc-msg" name="message" placeholder="Diagnosis, hospital, schedule, questions…"></textarea></div>
+</div>
+<p class="err-msg step-msg" hidden>Please complete the highlighted fields.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back data-i18n="gc_back">Back</button><button class="b-red" type="submit"><span data-i18n="gc_submit">Send to a nurse</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button></div>
+</div>
+</form>
+
+<div class="confirm" id="gc-done" data-done-panel hidden>
+<span class="okmark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<h2 class="h2-sm">Thank you, <span data-fill="first"></span>. A nurse will reach out to you.</h2>
+<p class="p">We'll call <strong data-fill="phone" style="color:#1B1F2E"></strong> to talk through care for <span data-fill="who" data-fallback="your loved one"></span>. Your reference number is <span class="code ref-code" style="color:#1B1F2E"></span>.</p>
+<ul class="ticks"><li>A nurse reviews your answers and calls you</li><li>We check coverage and match the right team</li><li>Care begins at home</li></ul>
+<p class="small">Prototype: nothing was sent.</p>
+<div class="row g12"><a class="b-blue" href="#home">Back to home</a><button class="b-line" type="button" data-restart="#gc-form">Start another inquiry</button></div>
+</div>
+</div>
+
+<aside class="stack g16 sticky-side">
+<div class="card-pale stack g12">
+<p class="h4" data-i18n="gc_next_t">What happens next</p>
+<div class="num-row" style="grid-template-columns:40px minmax(0,1fr);padding:14px 0"><span class="num" style="font-size:24px">1</span><p class="p" style="font-size:15px" data-i18n="gc_n1">A nurse reviews your answers and reaches out.</p></div>
+<div class="num-row" style="grid-template-columns:40px minmax(0,1fr);padding:14px 0"><span class="num" style="font-size:24px">2</span><p class="p" style="font-size:15px" data-i18n="gc_n2">We check coverage and match clinicians who fit your needs and language.</p></div>
+<div class="num-row" style="grid-template-columns:40px minmax(0,1fr);padding:14px 0"><span class="num" style="font-size:24px">3</span><p class="p" style="font-size:15px" data-i18n="gc_n3">Care begins at home, and your coordinator stays with you.</p></div>
+</div>
+<div class="card stack g10"><p class="h4">Are you a physician?</p><p class="small">Send a patient referral with clinical details instead.</p><a class="b-line b-sm" href="#refer" style="align-self:flex-start">Refer a patient</a></div>
+</aside>
+</div>
+</section>
+</div>
+
+=== FILE: pages/refer.html ===
+<div class="route" data-route="refer" data-title="Refer a patient" hidden>
+<section class="clip bg-ink on-ink">
+<div aria-hidden="true" class="stripe" style="background:rgba(255,255,255,.05)"></div>
+<div class="wrap rel split g56" style="padding-top:40px;padding-bottom:64px;align-items:end">
+<div class="stack g18">
+<nav class="crumbs" aria-label="Breadcrumb" style="color:#C3CCEE"><a href="#home" style="color:#C3CCEE">Home</a><span aria-hidden="true">/</span><span>Refer a patient</span></nav>
+<p class="eyebrow on-dark r1">For physicians, hospitals &amp; care managers</p>
+<h1 class="h1 r2" style="color:#FFFFFF">Refer a patient. <em style="color:#AFC0FF">We'll take it from here.</em></h1>
+<p class="lead r3">We closely follow your patient's care plan and keep you updated on their progress. We're available 24/7 to help with compliance, medication monitoring and a wide range of home health services.</p>
+</div>
+<div class="g2 g12 r4">
+<div class="card-ink stack g6" style="padding:20px"><p class="kicker" style="color:#AFC0FF">Start of care</p><p class="h3" style="color:#FFFFFF">Typically within 24 hours</p><p class="small">of your referral</p></div>
+<div class="card-ink stack g6" style="padding:20px"><p class="kicker" style="color:#AFC0FF">Intake</p><p class="h4" style="color:#FFFFFF;font-variant-numeric:tabular-nums">718-535-3100 ext. 3296</p><p class="small">Fax 718-872-2450</p></div>
+<div class="card-ink stack g6 span2" style="padding:20px;background:#2940C2;grid-column:1/-1"><p class="kicker" style="color:#D6DDF7">Priority care line</p><p class="h4" style="color:#FFFFFF;font-variant-numeric:tabular-nums">917-992-5529</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap split-l g56" style="align-items:start">
+<div>
+<form class="card stack g24" id="rf-form" data-multistep data-review="1" data-done="#rf-done" data-prefix="RF" novalidate style="padding:clamp(24px,3.5vw,40px)">
+<div class="stack g10">
+<div class="steps" aria-hidden="true"><span class="step-dot on"></span><span class="step-dot"></span><span class="step-dot"></span><span class="step-dot"></span></div>
+<p class="kicker step-label" aria-live="polite">Step 1 of 4 · Patient</p>
+</div>
+<div class="notice warn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span><strong>Prototype:</strong> nothing is sent or stored. Use made-up details only. The live version must run on encrypted, HIPAA-compliant handling.</span></div>
+
+<div class="stack g20" data-step data-name="Patient">
+<p class="legend">Patient information</p>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-name">Patient name <span class="req">*</span></label><input class="input" id="rf-name" name="patient" data-review-label="Patient" required></div>
+<div class="field"><label class="label" for="rf-dob">Date of birth <span class="req">*</span></label><input class="input" id="rf-dob" name="dob" type="date" data-review-label="Date of birth" required></div>
+<div class="field"><label class="label" for="rf-phone">Patient phone <span class="req">*</span></label><input class="input" id="rf-phone" name="pphone" type="tel" required></div>
+<div class="field"><label class="label" for="rf-living">Living arrangement</label><select class="input" id="rf-living" name="living" data-review-label="Living arrangement"><option value="">Select</option><option>Lives alone</option><option>Lives with family</option><option>Lives with a caregiver</option><option>Other</option></select></div>
+<div class="field span2"><label class="label" for="rf-addr">Address <span class="req">*</span></label><input class="input" id="rf-addr" name="address" autocomplete="street-address" required></div>
+<div class="field"><label class="label" for="rf-city">City <span class="req">*</span></label><input class="input" id="rf-city" name="city" data-review-label="City" required></div>
+<div class="field"><label class="label" for="rf-zip">ZIP <span class="req">*</span></label><input class="input" id="rf-zip" name="pzip" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" required></div>
+<div class="field"><label class="label" for="rf-ec">Emergency contact <span class="req">*</span></label><input class="input" id="rf-ec" name="ec" required></div>
+<div class="field"><label class="label" for="rf-ecp">Emergency contact phone <span class="req">*</span></label><input class="input" id="rf-ecp" name="ecphone" type="tel" required></div>
+</div>
+<p class="err-msg step-msg" hidden>Please complete the highlighted fields.</p>
+<div class="row between g12"><span></span><button class="b-red" type="button" data-next>Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button></div>
+</div>
+
+<div class="stack g20" data-step data-name="Insurance" hidden>
+<p class="legend">Insurance</p>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-mcr">Medicare #</label><input class="input" id="rf-mcr" name="medicare"></div>
+<div class="field"><label class="label" for="rf-mcd">Medicaid #</label><input class="input" id="rf-mcd" name="medicaid"></div>
+<div class="field"><label class="label" for="rf-hmo">Other insurance / HMO #</label><input class="input" id="rf-hmo" name="hmo"></div>
+<div class="field"><label class="label" for="rf-auth">Authorization number</label><input class="input" id="rf-auth" name="auth"></div>
+</div>
+<p class="help">Enter whichever apply. Our intake team verifies coverage and collects any other identifiers securely by phone.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back>Back</button><button class="b-red" type="button" data-next>Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button></div>
+</div>
+
+<div class="stack g20" data-step data-name="Clinical" hidden>
+<div class="card-sky stack g12" style="padding:22px">
+<div class="row between g10"><p class="h4" style="display:flex;align-items:center;gap:8px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4"></path><path d="M12 17v4"></path><path d="M3 12h4"></path><path d="M17 12h4"></path><path d="M12 8l1.5 2.5L16 12l-2.5 1.5L12 16l-1.5-2.5L8 12l2.5-1.5z"></path></svg>Paste the progress note, we fill the clinical fields</p><span class="pill white">AI assist</span></div>
+<textarea class="input" id="rf-note-text" rows="4" placeholder="Paste or dictate the last visit note: diagnoses, meds, allergies, mobility, plan… (demo: use made-up text)"></textarea>
+<div class="row between g10"><button class="b-blue b-sm" type="button" id="rf-extract">Extract fields</button><p class="small" id="rf-extract-out" role="status"></p></div>
+</div>
+<p class="legend">Physician</p>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-md">Physician name <span class="req">*</span></label><input class="input" id="rf-md" name="physician" data-review-label="Physician" required></div>
+<div class="field"><label class="label" for="rf-mdp">Physician phone <span class="req">*</span></label><input class="input" id="rf-mdp" name="mdphone" type="tel" required></div>
+<div class="field"><label class="label" for="rf-npi">NPI # <span class="req">*</span></label><input class="input" id="rf-npi" name="npi" inputmode="numeric" maxlength="10" data-review-label="NPI" required></div>
+<div class="field"><label class="label" for="rf-lic">License # <span class="req">*</span></label><input class="input" id="rf-lic" name="license" required></div>
+<div class="field"><label class="label" for="rf-last">Date of last MD visit <span class="req">*</span></label><input class="input" id="rf-last" name="lastvisit" type="date" required></div>
+<div class="field"><span class="label">Last visit progress note <span class="req">*</span></span><label class="drop" for="rf-note" style="min-height:50px;flex-direction:row;gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4"></path><path d="M7 9l5-5 5 5"></path><path d="M5 20h14"></path></svg><span id="rf-note-name">Choose a file</span></label><input class="sr" id="rf-note" name="note" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required></div>
+</div>
+<p class="legend" style="margin-top:6px">Diagnoses &amp; status</p>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-dx1">Diagnosis 1 <span class="req">*</span></label><input class="input" id="rf-dx1" name="dx1" data-review-label="Primary diagnosis" required></div>
+<div class="field"><label class="label" for="rf-dx2">Diagnosis 2</label><input class="input" id="rf-dx2" name="dx2"></div>
+<div class="field"><label class="label" for="rf-amb">Ambulation status</label><select class="input" id="rf-amb" name="ambulation"><option value="">Select</option><option>Independent</option><option>Assistive device</option><option>Needs assistance</option><option>Wheelchair</option><option>Bedbound</option></select></div>
+<div class="field"><label class="label" for="rf-ms">Mental status <span class="req">*</span></label><select class="input" id="rf-ms" name="mental" required><option value="">Select</option><option>Alert and oriented</option><option>Forgetful</option><option>Confused</option><option>Other</option></select></div>
+<div class="field"><label class="label" for="rf-all">Allergies <span class="req">*</span></label><input class="input" id="rf-all" name="allergies" placeholder="NKDA if none" required></div>
+<div class="field"><label class="label" for="rf-hosp">Recent hospitalization date</label><input class="input" id="rf-hosp" name="hosp" type="date"></div>
+<div class="field span2"><label class="label" for="rf-reason">Reason for home care <span class="req">*</span></label><textarea class="input" id="rf-reason" name="reason" data-review-label="Reason for home care" required></textarea></div>
+<div class="field span2"><label class="label" for="rf-meds">Medications</label><textarea class="input" id="rf-meds" name="meds" placeholder="Name, dosage, route and frequency, one per line"></textarea></div>
+</div>
+<p class="err-msg step-msg" hidden>Please complete the highlighted fields.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back>Back</button><button class="b-red" type="button" data-next>Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button></div>
+</div>
+
+<div class="stack g20" data-step data-name="Services &amp; signature" hidden>
+<div class="stack g12">
+<p class="legend" id="rf-svc-l">Home health care services requested</p>
+<div class="row g8" data-chips="rf-svc" data-multi data-required role="group" aria-labelledby="rf-svc-l">
+<button class="ch" type="button" data-val="RN" aria-pressed="false">RN · Nursing</button>
+<button class="ch" type="button" data-val="PT" aria-pressed="false">PT · Physical therapy</button>
+<button class="ch" type="button" data-val="OT" aria-pressed="false">OT · Occupational therapy</button>
+<button class="ch" type="button" data-val="ST" aria-pressed="false">ST · Speech therapy</button>
+<button class="ch" type="button" data-val="HHA" aria-pressed="false">HHA · Home health aide</button>
+<button class="ch" type="button" data-val="SW" aria-pressed="false">SW · Social work</button>
+</div>
+<input type="hidden" id="rf-svc" name="services" data-review-label="Services requested">
+<p class="err-msg chips-err" hidden>Choose at least one service.</p>
+</div>
+<div class="stack g8"><p class="kicker">Review</p><div class="review"></div></div>
+<div class="card-pale stack g8" id="rf-missing" style="padding:18px"></div>
+<div class="fgrid">
+<div class="field"><label class="label" for="rf-sign">Physician signature (type full name) <span class="req">*</span></label><input class="input" id="rf-sign" name="signature" required style="font-family:'P22 Mackinac',Literata,Georgia,serif;font-size:20px"></div>
+<div class="field"><label class="label" for="rf-copy">Email a copy of this referral to</label><input class="input" id="rf-copy" name="copy" type="email"></div>
+<label class="check span2" style="min-height:auto;padding:12px 14px;align-items:flex-start"><input type="checkbox" id="rf-attest" required style="margin-top:2px"><span style="font-size:14px">I certify this referral is accurate and authorize Americare to begin intake. <span class="req">*</span></span></label>
+</div>
+<p class="err-msg step-msg" hidden>Choose a service, sign, and confirm the certification.</p>
+<div class="row between g12"><button class="b-line" type="button" data-back>Back</button><button class="b-red" type="submit">Submit referral<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></button></div>
+</div>
+</form>
+
+<div class="confirm" id="rf-done" data-done-panel hidden>
+<span class="okmark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<h2 class="h2-sm">Referral received for <span data-fill="patient"></span>.</h2>
+<p class="p">Reference <span class="code ref-code" style="color:#1B1F2E"></span>. Our intake team will confirm coverage and contact <span data-fill="physician"></span>'s office. Care typically begins within 24 hours of a referral.</p>
+<p class="small">Prototype: nothing was sent.</p>
+<div class="row g12"><a class="b-blue" href="#home">Back to home</a><button class="b-line" type="button" data-restart="#rf-form">Refer another patient</button></div>
+</div>
+</div>
+
+<aside class="stack g16 sticky-side">
+<div class="card-pale stack g14">
+<p class="h4">Our commitment to referring partners</p>
+<ul class="ticks">
+<li>We follow your patient's care plan closely</li>
+<li>You get updates on their progress</li>
+<li>Available 24/7 for compliance and medication monitoring</li>
+<li>Care typically begins within 24 hours</li>
+</ul>
+</div>
+<div class="card stack g10"><p class="h4">Prefer to fax?</p><p class="small">Send referrals and progress notes to <strong style="color:#1B1F2E">718-872-2450</strong>.</p><button class="b-line b-sm" type="button" data-copy="718-872-2450" style="align-self:flex-start">Copy fax number</button></div>
+</aside>
+</div>
+</section>
+</div>
+
+=== FILE: pages/careers.html ===
+<div class="route" data-route="careers" data-title="Careers" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap phero-grid">
+<div class="stack g20">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Careers</span></nav>
+<p class="eyebrow r1">Americare careers</p>
+<h1 class="h1 r2">Your future <em>starts here.</em></h1>
+<p class="lead r3">Our commitment to top-notch care is rooted in our passion for people. Join an organization with over 40 years of service, and make a real difference in people's lives.</p>
+<div class="row g12 r4">
+<a class="b-red" href="https://americareny.wd108.myworkdayjobs.com/Americare_CAREERS" target="_blank" rel="noopener">See open roles<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></a>
+<a class="b-line" href="https://identity.wd108.myworkday.com/wday/authgwy/americareny/upc/login" target="_blank" rel="noopener">Current employees</a>
+</div>
+</div>
+<div class="photo r2">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/team-clinicians.jpg" alt="Two smiling Americare clinicians, one in a white coat and one in blue scrubs"></div>
+<div class="float bob-a" style="right:20px;bottom:28px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c3 2 9 2 12 0v-5"></path></svg><span class="stack" style="line-height:1.3"><strong style="font-size:14px;color:#1B1F2E">Free aide certification</strong><span style="font-size:12px;color:#4F5566">in English, Spanish and Russian</span></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split-side g56" style="align-items:start">
+<div class="stack g16">
+<p class="eyebrow">Find your discipline</p>
+<h2 class="h2">Where do you fit?</h2>
+<p class="p">Choose your discipline to see what the work looks like at Americare.</p>
+</div>
+<div class="stack g20">
+<div class="disc" id="disc" role="group" aria-label="Disciplines">
+<button type="button" data-disc="rn" aria-pressed="true"><strong>Registered Nurses</strong><span>RN</span></button>
+<button type="button" data-disc="pt" aria-pressed="false"><strong>Physical Therapists</strong><span>PT</span></button>
+<button type="button" data-disc="ot" aria-pressed="false"><strong>Occupational Therapists</strong><span>OT</span></button>
+<button type="button" data-disc="slp" aria-pressed="false"><strong>Speech-Language Pathologists</strong><span>SLP</span></button>
+<button type="button" data-disc="hha" aria-pressed="false"><strong>Home Health Aides</strong><span>HHA · PCA</span></button>
+<button type="button" data-disc="sw" aria-pressed="false"><strong>Medical Social Workers</strong><span>SW</span></button>
+</div>
+<div class="card-pale stack g14" id="disc-panel" aria-live="polite" style="padding:clamp(24px,3.5vw,36px)">
+<p class="kicker red" id="disc-where">Skilled Nursing (CHHA) · Amerikids</p>
+<h3 class="h2-sm" id="disc-title">Registered Nurses</h3>
+<p class="p" id="disc-body" style="max-width:640px">Skilled nursing visits for adults and children: health monitoring, medication management, wound care, patient and caregiver education, and care coordination.</p>
+<div class="row g12">
+<a class="b-blue" href="https://americareny.wd108.myworkdayjobs.com/Americare_CAREERS" target="_blank" rel="noopener">View open roles<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></a>
+<a class="b-line" id="disc-train" href="#contact" data-subject="Apply for Home Health Aide Training" hidden>Apply for free training</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-pale2" id="benefits">
+<div class="wrap stack g40">
+<div class="head-row"><div class="stack g14 maxw-lg"><p class="eyebrow">Unlock a wealth of benefits</p><h2 class="h2">We take care of the people who give care.</h2></div></div>
+<div class="g5 g16">
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"></path><path d="M16.5 7.5c0-1.7-2-3-4.5-3s-4.5 1.3-4.5 3 2 2.5 4.5 3 4.5 1.3 4.5 3-2 3-4.5 3-4.5-1.3-4.5-3"></path></svg></span><h3 class="h4">Competitive salary</h3></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11a7 6 0 0 1 13-2h2v4l-2 1a7 6 0 0 1-3 3v3h-3v-2H9v2H6v-3.5A6 6 0 0 1 5 11z"></path><path d="M15 10h.01"></path></svg></span><h3 class="h4">401(k) retirement plan</h3></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"></path></svg></span><h3 class="h4">Medical and dental coverage</h3></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M8 3v4"></path><path d="M16 3v4"></path></svg></span><h3 class="h4">Days off, vacation and holidays</h3></div>
+<div class="card reveal stack g12"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg></span><h3 class="h4">Continuous learning</h3></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-blue on-blue clip" id="hha-training">
+<div aria-hidden="true" style="position:absolute;left:-120px;bottom:-160px;width:560px;height:480px;background:rgba(255,255,255,.06);clip-path:polygon(50% 0,100% 100%,0 100%)"></div>
+<div class="wrap rel split g64" style="align-items:center">
+<div class="stack g18">
+<p class="eyebrow on-blue">Want to make a difference as a home health aide?</p>
+<h2 class="h2">We'll train you for free.</h2>
+<p class="lead">Earn your home health aide certification at the Americare Inc. Training School. Graduates are interviewed and fast-tracked for hire.</p>
+<div class="row g12" style="margin-top:6px"><a class="b-white" href="#contact" data-subject="Apply for Home Health Aide Training">Apply for free training<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+</div>
+<div class="g2 g12">
+<div class="card-ink stack g6" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)"><p class="stat-v" style="color:#FFFFFF;font-size:40px">15 + 1</p><p class="small" style="color:#E4EAFF">15 consecutive business days, plus 1 skilled practical training day</p></div>
+<div class="card-ink stack g6" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)"><p class="stat-v" style="color:#FFFFFF;font-size:40px">$0</p><p class="small" style="color:#E4EAFF">Free certification training</p></div>
+<div class="card-ink stack g8" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)"><p class="kicker" style="color:#D6DDF7">Taught in</p><p class="h4" style="color:#FFFFFF">English · Español · Русский</p></div>
+<div class="card-ink stack g8" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)"><p class="kicker" style="color:#D6DDF7">Locations</p><p class="small" style="color:#FFFFFF">Brooklyn, Staten Island, Queens, the Bronx, Westchester</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec bg-white">
+<div class="wrap split g56" style="align-items:center">
+<div class="stack g16">
+<p class="eyebrow">Upcoming events</p>
+<h2 class="h2-sm">PT, OT &amp; SLP Virtual Career Fair</h2>
+<p class="p">For our Mt. Vernon, NY location. Meet the therapy team and schedule an interview, all online.</p>
+<div class="row g10"><span class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>&nbsp;10 AM – 3 PM</span><span class="pill">Virtual</span><span class="pill red">Date [TO BE ANNOUNCED]</span></div>
+<a class="b-blue" href="https://calendly.com/jcelus/15min" target="_blank" rel="noopener" style="align-self:flex-start">Schedule an interview<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></a>
+</div>
+<div class="card-pale stack g14">
+<p class="h4">Already part of the team?</p>
+<p class="p">Pay, schedules and HR tools live in Workday.</p>
+<div class="row g10"><a class="b-line b-sm" href="https://identity.wd108.myworkday.com/wday/authgwy/americareny/upc/login" target="_blank" rel="noopener">Workday login<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></a><a class="b-line b-sm" href="#guides">Employee highlights</a></div>
+</div>
+</div>
+</section>
+</div>
+
+=== FILE: pages/guides.html ===
+<div class="route" data-route="guides" data-title="Guides" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap rel split g56" style="padding-top:40px;padding-bottom:64px;align-items:end">
+<div class="stack g18">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span>Guides</span></nav>
+<p class="eyebrow r1">Stay informed, stay healthy</p>
+<h1 class="h1 r2">Home health care <em>insights &amp; tips.</em></h1>
+<p class="lead r3">Plain-language guides for families, caregivers and patients across New York.</p>
+</div>
+<div class="card stack g12 r4" style="border:0;box-shadow:0 30px 60px -30px rgba(18,26,75,.35)">
+<label class="h4" for="ask2" style="display:flex;align-items:center;gap:10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"></path></svg>Ask Americare</label>
+<div class="row g10" style="flex-wrap:nowrap"><input class="input" id="ask2" type="text" placeholder="e.g. Does Medicaid cover a home health aide?" style="flex:1;min-width:0"><button class="b-blue" type="button" data-ask="ask2">Ask</button></div>
+<div class="row g6"><button class="ch ch-sm" type="button" data-target="ask2" data-ask-q="What is the NHTD waiver?">What is the NHTD waiver?</button><button class="ch ch-sm" type="button" data-target="ask2" data-ask-q="PCA or HHA: which do I need?">PCA or HHA?</button></div>
+<div class="ask-out" id="ask2-out" role="status" aria-live="polite"></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap stack g32">
+<a class="lift reveal split" href="#guide-discharge" style="border-radius:26px;overflow:hidden;border:1px solid #DCE6F5;background:#FFFFFF;gap:0">
+<div style="min-height:340px;background:#CCDEF2;overflow:hidden"><img src="img/nurse-arm.jpg" alt="A nurse walking arm in arm with an older woman at home" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<div class="stack g14" style="padding:clamp(24px,4vw,48px);justify-content:center">
+<div class="post-meta"><span class="pill">Recovery &amp; safety</span><span>October 1, 2026</span></div>
+<h2 class="h2-sm">Home care after hospital discharge in Brooklyn</h2>
+<p class="p">The first 72 hours home carry the highest readmission risk. Here's what to watch for, what kinds of support help, and how to pay for it.</p>
+<span class="link-arrow">Read the guide<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+
+<div class="stack g16" data-filter-group="#posts" data-search="#guide-search" data-empty="#posts-empty">
+<div class="row between g16">
+<div class="row g8" role="group" aria-label="Filter by topic">
+<button class="ch ch-sm on" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="ch ch-sm" type="button" data-filter="recovery" aria-pressed="false">Recovery &amp; safety</button>
+<button class="ch ch-sm" type="button" data-filter="family" aria-pressed="false">Family caregiving</button>
+<button class="ch ch-sm" type="button" data-filter="programs" aria-pressed="false">Programs &amp; coverage</button>
+<button class="ch ch-sm" type="button" data-filter="neighborhoods" aria-pressed="false">Neighborhoods</button>
+</div>
+<div class="row g8" style="flex-wrap:nowrap;min-width:min(300px,100%)"><label class="sr" for="guide-search">Search guides</label><span style="color:#4F5566;display:flex"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span><input class="input" id="guide-search" type="search" placeholder="Search guides" style="min-height:44px"></div>
+</div>
+</div>
+<div class="g3 g16" id="posts">
+<a class="post" data-tags="family neighborhoods" href="https://www.americareny.com/home-care-multigenerational-households-brooklyn/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Family caregiving</span><span>Oct 1, 2026</span></div><h3 class="h4">Home care for multigenerational households in Brooklyn</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="recovery" href="https://www.americareny.com/home-care-for-seniors-after-a-fall-nyc/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Recovery &amp; safety</span><span>Oct 1, 2026</span></div><h3 class="h4">Home care for seniors after a fall in NYC: recovery, safety and next steps</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="family" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Family caregiving</span><span>Sep 28, 2026</span></div><h3 class="h4">The benefits of home care for dementia patients</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="programs family" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Programs &amp; coverage</span><span>Aug 21, 2026</span></div><h3 class="h4">How to become a paid caregiver for a family member in NY</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="neighborhoods" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Neighborhoods</span><span>Aug 14, 2026</span></div><h3 class="h4">Home care in South Brooklyn: Bensonhurst, Bay Ridge &amp; more</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="programs family" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Programs &amp; coverage</span><span>Aug 11, 2026</span></div><h3 class="h4">Pediatric home health care: a complete guide for NYC families</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="programs" href="#nhtd"><div class="post-meta"><span class="pill">Programs &amp; coverage</span><span>Aug 7, 2026</span></div><h3 class="h4">NHTD waiver program in NYC: what it is and how to apply</h3><span class="small">See the NHTD page</span></a>
+<a class="post" data-tags="programs" href="#home-health-aides"><div class="post-meta"><span class="pill">Programs &amp; coverage</span><span>Jul 24, 2026</span></div><h3 class="h4">PCA vs. HHA: what's the difference?</h3><span class="small">See Home Health Aides</span></a>
+<a class="post" data-tags="recovery" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Recovery &amp; safety</span><span>Jul 24, 2026</span></div><h3 class="h4">Home safety tips for the elderly in NYC</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="recovery family" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Recovery &amp; safety</span><span>Jul 17, 2026</span></div><h3 class="h4">Home care for stroke patients in NYC: a family's recovery guide</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="neighborhoods" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Neighborhoods</span><span>Jul 10, 2026</span></div><h3 class="h4">In-home care in Westchester County</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="family" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Family caregiving</span><span>Jun 24, 2026</span></div><h3 class="h4">How adult children can plan home care from out of state</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+<a class="post" data-tags="recovery neighborhoods" href="https://www.americareny.com/blog/" target="_blank" rel="noopener"><div class="post-meta"><span class="pill">Recovery &amp; safety</span><span>Jun 24, 2026</span></div><h3 class="h4">Managing chronic conditions at home in Brooklyn</h3><span class="small">americareny.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg></span></a>
+</div>
+<p class="p" id="posts-empty" hidden>No guides match that search. Try another word, or ask Americare above.</p>
+</div>
+</section>
+</div>
+
+=== FILE: pages/article.html ===
+<div class="route" data-route="guide-discharge" data-title="Home care after hospital discharge in Brooklyn" hidden>
+<section class="phero">
+<div aria-hidden="true" class="stripe"></div>
+<div class="wrap rel phero-grid" style="padding-bottom:56px">
+<div class="stack g18">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#guides">Guides</a><span aria-hidden="true">/</span><span>Hospital discharge</span></nav>
+<div class="post-meta r1"><span class="pill white">Recovery &amp; safety</span><span>October 1, 2026</span><span>By Americare</span></div>
+<h1 class="h1 r2" style="font-size:clamp(38px,4.4vw,62px)">Home care after hospital discharge <em>in Brooklyn.</em></h1>
+<p class="lead r3">The first 72 hours home are when readmission risk is highest. Short-term support, from personal care aides to skilled nursing and therapy, helps your loved one recover safely.</p>
+</div>
+<div class="photo r2" style="min-height:420px">
+<div class="mark" aria-hidden="true"></div>
+<div class="frame"><img class="settle" src="img/nurse-arm.jpg" alt="A nurse walking arm in arm with an older woman at home"></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-white">
+<div class="wrap split-side g56" style="align-items:start">
+<aside class="toc" aria-label="On this page">
+<p class="kicker" style="margin:0 0 8px 12px">On this page</p>
+<button type="button" data-scroll="a-72">The first 72 hours</button>
+<button type="button" data-scroll="a-watch">What to watch for</button>
+<button type="button" data-scroll="a-types">Types of support</button>
+<button type="button" data-scroll="a-signs">Signs you need more help</button>
+<button type="button" data-scroll="a-pay">Paying for care</button>
+<button type="button" data-scroll="a-ask">Questions to ask an agency</button>
+<button type="button" data-scroll="a-faq">FAQs</button>
+<div class="card-blue stack g10" style="margin-top:20px;padding:22px"><p class="h4" style="color:#FFFFFF">Planning a discharge?</p><p class="small" style="color:#E4EAFF">Schedule a free consultation and we'll coordinate with the hospital.</p><a class="b-white b-sm" href="#get-care" style="align-self:flex-start">Get started</a></div>
+</aside>
+<article class="prose">
+<h2 id="a-72">What happens in the first 72 hours after discharge</h2>
+<p>The first three days home are a high-risk transition. Medications change, wounds need watching, and follow-up care has to be in place before small problems become a trip back to the hospital.</p>
+<h3>Why this window carries the highest readmission risk</h3>
+<p>Common causes of readmission include medication errors, infections and falls. Knowing the symptoms to watch for, and who to call, makes the difference.</p>
+
+<h2 id="a-watch">First 72 hours: what to watch for</h2>
+<div class="tbl-wrap"><table class="tbl" style="min-width:520px">
+<thead><tr><th scope="col">When</th><th scope="col">Focus</th></tr></thead>
+<tbody>
+<tr><th scope="row">Discharge day</th><td>Confirm every medication and the discharge instructions; make sure follow-up appointments are booked.</td></tr>
+<tr><th scope="row">Days 1–2</th><td>Monitor wounds, symptoms and medication timing; watch for warning signs.</td></tr>
+<tr><th scope="row">Day 3 and after</th><td>Keep follow-up appointments and adjust the level of support as recovery progresses.</td></tr>
+</tbody></table></div>
+<h3>What hospital case managers do (and don't) handle</h3>
+<p>Case managers arrange post-discharge medical services. Ongoing daily help at home usually has to be arranged separately, and that's where we come in.</p>
+
+<h2 id="a-types">Types of post-discharge home care support</h2>
+<p>The right type and length of care depends on the diagnosis and recovery needs.</p>
+<h3>Personal care aides for daily living</h3>
+<p>Non-medical help with bathing, mobility, meals and similar tasks. <a href="#home-health-aides">About our aides</a>.</p>
+<h3>Skilled nursing for wound care and medications</h3>
+<p>Licensed nursing such as wound checks, infection monitoring and medication teaching. <a href="#skilled-nursing">About skilled nursing</a>.</p>
+<h3>Physical, occupational and speech therapy</h3>
+<p>Therapy rebuilds strength and mobility, everyday skills, and communication or swallowing. <a href="#therapy">About therapy</a>.</p>
+
+<h2 id="a-signs">Signs your family member needs more than family support</h2>
+<p>Professional help is worth considering when your loved one needs hands-on care that family can't safely provide, or when no one is available during the day.</p>
+
+<h2 id="a-pay">Paying for post-discharge home care in Brooklyn</h2>
+<p>Options include Medicare, Medicaid, private insurance and out-of-pocket payment.</p>
+<h3>Medicaid-funded PCA and MLTC options</h3>
+<p>Medicaid may cover aide services through an assessment and a managed long-term care (MLTC) plan.</p>
+<h3>Medicare's short-term skilled care coverage</h3>
+<p>Medicare covers short-term skilled nursing and therapy, but generally not long-term daily help.</p>
+
+<h2 id="a-ask">Questions to ask before choosing a Brooklyn home care agency</h2>
+<ul class="ticks">
+<li>How quickly can care start?</li>
+<li>Which services does my coverage include?</li>
+<li>How are caregivers trained and supervised?</li>
+<li>How will you keep our family and doctors updated?</li>
+<li>Are you licensed and accredited?</li>
+</ul>
+
+<h2 id="a-faq">FAQs</h2>
+<div class="faq" style="font-size:16px">
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="ar-f1">How quickly can home care start after a hospital discharge?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="ar-f1" hidden>Americare can typically begin services soon after outreach. For physician referrals, care typically begins within 24 hours.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="ar-f2">What's the difference between a personal care aide and a skilled nurse after discharge?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="ar-f2" hidden>A personal care aide gives non-medical help with daily living. A skilled nurse provides medical care such as wound care, monitoring and medication management.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="ar-f3">Does Medicaid cover home care after a hospital stay in Brooklyn?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="ar-f3" hidden>Medicaid may cover aide services after an assessment, often through an MLTC plan. Our intake team confirms what's covered.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="ar-f4">What are the warning signs that home care isn't enough?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="ar-f4" hidden>Needing more hands-on care than family can safely give, or gaps with no one available during the day, are signs to add professional support.</p>
+<button class="faq-q" type="button" aria-expanded="false" aria-controls="ar-f5">Which Brooklyn hospitals does Americare coordinate with?<span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></button>
+<p class="faq-a" id="ar-f5" hidden>[HOSPITAL PARTNER LIST TO BE ADDED]</p>
+<div class="faq-end"></div>
+</div>
+
+<div class="card-sky stack g12" style="margin-top:16px">
+<p class="h3">Schedule a free consultation</p>
+<p class="p">Tell us about the discharge plan and we'll coordinate with the hospital and your doctors.</p>
+<div class="row g12"><a class="b-red" href="#get-care">Get started<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><span class="small">or call <strong style="color:#1B1F2E">1-800-704-4341</strong></span></div>
+</div>
+<p class="small">Resources: <a href="https://www.cms.gov" target="_blank" rel="noopener">Centers for Medicare &amp; Medicaid Services</a> · <a href="https://www.health.ny.gov" target="_blank" rel="noopener">New York State Department of Health</a></p>
+</article>
+</div>
+</section>
+</div>
+
+=== FILE: pages/intake.html ===
+<div class="route" data-route="intake-desk" data-title="Intake Desk (demo)" hidden>
+<section class="clip bg-ink on-ink">
+<div aria-hidden="true" class="stripe" style="background:rgba(255,255,255,.05)"></div>
+<div class="wrap rel stack g16" style="padding-top:40px;padding-bottom:48px">
+<nav class="crumbs" aria-label="Breadcrumb" style="color:#C3CCEE"><a href="#home" style="color:#C3CCEE">Home</a><span aria-hidden="true">/</span><span>Intake Desk</span></nav>
+<div class="head-row">
+<div class="stack g12 maxw-lg">
+<p class="eyebrow on-dark r1">Internal · demo only</p>
+<h1 class="h1 r2" style="color:#FFFFFF;font-size:clamp(36px,4vw,56px)">Intake Desk</h1>
+<p class="lead r3">Where Care Navigator conversations, Get care inquiries and physician referrals land. Each row gets an AI brief: a summary, the suggested service line, a priority and what to confirm on the first call.</p>
+</div>
+<div class="card-ink stack g6 r4" style="padding:20px"><p class="kicker" style="color:#AFC0FF">Queue</p><p class="h3" id="desk-count" style="color:#FFFFFF">4 open inquiries</p><p class="small">Synthetic demo data. Your own form submissions appear here for this session only and are never stored.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-pale2">
+<div class="wrap stack g20">
+<div class="notice warn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span><strong>Production note:</strong> this view would live behind staff sign-in on HIPAA-compliant infrastructure, not on the public site. The prototype keeps nothing between page loads.</span></div>
+<div class="desk" id="desk"></div>
+<div class="g3 g16">
+<div class="card stack g8"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4"></path><path d="M12 17v4"></path><path d="M3 12h4"></path><path d="M17 12h4"></path><path d="M12 8l1.5 2.5L16 12l-2.5 1.5L12 16l-1.5-2.5L8 12l2.5-1.5z"></path></svg></span><h2 class="h4">AI brief per inquiry</h2><p class="small">Summary, service line, priority and a first-call script, generated from the inquiry and the service catalog only.</p></div>
+<div class="card stack g8"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"></path></svg></span><h2 class="h4">Language carried through</h2><p class="small">The visitor's language travels with the inquiry so the coordinator who calls back can be matched.</p></div>
+<div class="card stack g8"><span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><h2 class="h4">Discharges first</h2><p class="small">Anything with a hospital discharge date or "this week" is flagged high priority for a same-day callback.</p></div>
+</div>
+</div>
+</section>
+</div>
+

@@ -1,0 +1,28 @@
+<div class="route" data-route="intake-desk" data-title="Intake Desk (demo)" hidden>
+<section class="clip bg-ink on-ink">
+<div aria-hidden="true" class="stripe" style="background:rgba(255,255,255,.05)"></div>
+<div class="wrap rel stack g16" style="padding-top:40px;padding-bottom:48px">
+<nav class="crumbs" aria-label="Breadcrumb" style="color:#C3CCEE"><a href="#home" style="color:#C3CCEE">Home</a><span aria-hidden="true">/</span><span>Intake Desk</span></nav>
+<div class="head-row">
+<div class="stack g12 maxw-lg">
+<p class="eyebrow on-dark r1">Internal · demo only</p>
+<h1 class="h1 r2" style="color:#FFFFFF;font-size:clamp(36px,4vw,56px)">Intake Desk</h1>
+<p class="lead r3">Where Care Navigator conversations, Get care inquiries and physician referrals land. Each row gets an AI brief: a summary, the suggested service line, a priority and what to confirm on the first call.</p>
+</div>
+<div class="card-ink stack g6 r4" style="padding:20px"><p class="kicker" style="color:#AFC0FF">Queue</p><p class="h3" id="desk-count" style="color:#FFFFFF">4 open inquiries</p><p class="small">Synthetic demo data. Your own form submissions appear here for this session only and are never stored.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec-md bg-pale2">
+<div class="wrap stack g20">
+<div class="notice warn">[[I:lock:20]]<span><strong>Production note:</strong> this view would live behind staff sign-in on HIPAA-compliant infrastructure, not on the public site. The prototype keeps nothing between page loads.</span></div>
+<div class="desk" id="desk"></div>
+<div class="g3 g16">
+<div class="card stack g8"><span class="icon-box">[[I:spark]]</span><h2 class="h4">AI brief per inquiry</h2><p class="small">Summary, service line, priority and a first-call script, generated from the inquiry and the service catalog only.</p></div>
+<div class="card stack g8"><span class="icon-box">[[I:globe]]</span><h2 class="h4">Language carried through</h2><p class="small">The visitor's language travels with the inquiry so the coordinator who calls back can be matched.</p></div>
+<div class="card stack g8"><span class="icon-box">[[I:clock]]</span><h2 class="h4">Discharges first</h2><p class="small">Anything with a hospital discharge date or "this week" is flagged high priority for a same-day callback.</p></div>
+</div>
+</div>
+</section>
+</div>

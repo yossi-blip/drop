@@ -1,0 +1,6 @@
+PROJECT: Americare 2027 website (americareny.com redesign) — port of an approved, fully working HTML prototype.
+
+I will send you the prototype's source in 6 messages. In this message and the next 5, DO NOT build or redesign anything yet. For each message, save every "=== FILE: path ===" block VERBATIM (byte for byte, no summarizing, no reformatting, no omissions) into a folder named `reference/` at the repo root, at the path given. Reply with only the list of files saved and their byte counts. The final (7th) message will tell you how to build the app from the reference files.
+
+Context you need now: this is a React + Tailwind port of a single-page prototype (hash router). The visual system is the brand's real one, extracted from the live site: blue #2940C2, red #DA3545, navy #121A4B, pale blues #E4F1FF / #F4F8FE / #CCDEF2, text #2D2D2D / #1B1F2E; display font "P22 Mackinac" (licensed; use Literata from Google Fonts as fallback) and Inter for body. The reference CSS below is the source of truth for every size, spacing and color — do not round or "improve" values.
+
